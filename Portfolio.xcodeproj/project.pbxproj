@@ -10,11 +10,15 @@
 		BAC76CAB1ADE34C50026F4D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC76CAA1ADE34C50026F4D1 /* AppDelegate.swift */; };
 		BAC76CB61ADE34C50026F4D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAC76CB51ADE34C50026F4D1 /* Images.xcassets */; };
 		BAC76CC51ADE34C50026F4D1 /* PortfolioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC76CC41ADE34C50026F4D1 /* PortfolioTests.swift */; };
-		BAC76CDC1ADE4C670026F4D1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC76CD51ADE4C670026F4D1 /* MainViewController.swift */; };
+		BAC76CDC1ADE4C670026F4D1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC76CD51ADE4C670026F4D1 /* HomeViewController.swift */; };
 		BAC76CDD1ADE4C670026F4D1 /* PortfolioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC76CD61ADE4C670026F4D1 /* PortfolioTableViewCell.swift */; };
 		BAC76CDE1ADE4C670026F4D1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAC76CD91ADE4C670026F4D1 /* LaunchScreen.xib */; };
 		BAC76CDF1ADE4C670026F4D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAC76CDA1ADE4C670026F4D1 /* Main.storyboard */; };
 		BAC76CE01ADE4C670026F4D1 /* PortfolioTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAC76CDB1ADE4C670026F4D1 /* PortfolioTableViewCell.xib */; };
+		BAC76CE41ADFA61A0026F4D1 /* EKFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC76CE31ADFA61A0026F4D1 /* EKFont.swift */; };
+		BAC76CE71ADFACCE0026F4D1 /* City.png in Resources */ = {isa = PBXBuildFile; fileRef = BAC76CE51ADFACCE0026F4D1 /* City.png */; };
+		BAC76CE81ADFACCE0026F4D1 /* Profile-Pic.png in Resources */ = {isa = PBXBuildFile; fileRef = BAC76CE61ADFACCE0026F4D1 /* Profile-Pic.png */; };
+		BAC76CEA1ADFB6300026F4D1 /* HomeTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC76CE91ADFB6300026F4D1 /* HomeTableViewManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +39,15 @@
 		BAC76CBE1ADE34C50026F4D1 /* PortfolioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PortfolioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC76CC31ADE34C50026F4D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAC76CC41ADE34C50026F4D1 /* PortfolioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioTests.swift; sourceTree = "<group>"; };
-		BAC76CD51ADE4C670026F4D1 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BAC76CD51ADE4C670026F4D1 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BAC76CD61ADE4C670026F4D1 /* PortfolioTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioTableViewCell.swift; sourceTree = "<group>"; };
 		BAC76CD91ADE4C670026F4D1 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		BAC76CDA1ADE4C670026F4D1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Interface/Main.storyboard; sourceTree = "<group>"; };
 		BAC76CDB1ADE4C670026F4D1 /* PortfolioTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PortfolioTableViewCell.xib; sourceTree = "<group>"; };
+		BAC76CE31ADFA61A0026F4D1 /* EKFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKFont.swift; sourceTree = "<group>"; };
+		BAC76CE51ADFACCE0026F4D1 /* City.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = City.png; sourceTree = "<group>"; };
+		BAC76CE61ADFACCE0026F4D1 /* Profile-Pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Profile-Pic.png"; sourceTree = "<group>"; };
+		BAC76CE91ADFB6300026F4D1 /* HomeTableViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +128,10 @@
 		BAC76CD41ADE4C670026F4D1 /* Code */ = {
 			isa = PBXGroup;
 			children = (
-				BAC76CD51ADE4C670026F4D1 /* MainViewController.swift */,
+				BAC76CD51ADE4C670026F4D1 /* HomeViewController.swift */,
 				BAC76CD61ADE4C670026F4D1 /* PortfolioTableViewCell.swift */,
+				BAC76CE31ADFA61A0026F4D1 /* EKFont.swift */,
+				BAC76CE91ADFB6300026F4D1 /* HomeTableViewManager.swift */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -129,6 +139,8 @@
 		BAC76CD71ADE4C670026F4D1 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				BAC76CE51ADFACCE0026F4D1 /* City.png */,
+				BAC76CE61ADFACCE0026F4D1 /* Profile-Pic.png */,
 			);
 			path = Graphics;
 			sourceTree = "<group>";
@@ -224,6 +236,8 @@
 			files = (
 				BAC76CE01ADE4C670026F4D1 /* PortfolioTableViewCell.xib in Resources */,
 				BAC76CDF1ADE4C670026F4D1 /* Main.storyboard in Resources */,
+				BAC76CE81ADFACCE0026F4D1 /* Profile-Pic.png in Resources */,
+				BAC76CE71ADFACCE0026F4D1 /* City.png in Resources */,
 				BAC76CDE1ADE4C670026F4D1 /* LaunchScreen.xib in Resources */,
 				BAC76CB61ADE34C50026F4D1 /* Images.xcassets in Resources */,
 			);
@@ -245,7 +259,9 @@
 			files = (
 				BAC76CAB1ADE34C50026F4D1 /* AppDelegate.swift in Sources */,
 				BAC76CDD1ADE4C670026F4D1 /* PortfolioTableViewCell.swift in Sources */,
-				BAC76CDC1ADE4C670026F4D1 /* MainViewController.swift in Sources */,
+				BAC76CE41ADFA61A0026F4D1 /* EKFont.swift in Sources */,
+				BAC76CEA1ADFB6300026F4D1 /* HomeTableViewManager.swift in Sources */,
+				BAC76CDC1ADE4C670026F4D1 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
