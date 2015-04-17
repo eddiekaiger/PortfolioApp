@@ -129,9 +129,9 @@
 			isa = PBXGroup;
 			children = (
 				BAC76CD51ADE4C670026F4D1 /* HomeViewController.swift */,
+				BAC76CE91ADFB6300026F4D1 /* HomeTableViewManager.swift */,
 				BAC76CD61ADE4C670026F4D1 /* PortfolioTableViewCell.swift */,
 				BAC76CE31ADFA61A0026F4D1 /* EKFont.swift */,
-				BAC76CE91ADFB6300026F4D1 /* HomeTableViewManager.swift */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -370,6 +370,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Portfolio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -380,6 +381,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Portfolio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

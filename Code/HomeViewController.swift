@@ -42,7 +42,9 @@ class HomeViewController: UIViewController {
         self.tableView.contentInset = UIEdgeInsetsMake(defaultHeaderHeight, 0, 0, 0)
         self.tableView.tableFooterView = UIView()
         self.tableView.registerClass(PortfolioTableViewCell.self, forCellReuseIdentifier: PortfolioTableViewCell.cellIdentifer)
-        self.tableView.separatorColor = UIColor.clearColor()
+        self.tableView.separatorColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.6)
+        self.tableView.separatorInset = UIEdgeInsetsZero
+        self.tableView.layoutMargins = UIEdgeInsetsZero
         self.tableView.delegate = self
         self.tableView.dataSource = self
     }

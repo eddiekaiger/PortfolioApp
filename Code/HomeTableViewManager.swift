@@ -12,11 +12,11 @@ import UIKit
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     var normalCellColor: UIColor {
-        return UIColor(red: 1, green: 1, blue: 1, alpha: 0.05)
+        return UIColor(red: 0, green: 0, blue: 0, alpha: 0.4)
     }
     
     var highlightedCellColor: UIColor {
-        return UIColor(red: 1, green: 1, blue: 1, alpha: 0.2)
+        return UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
     }
     
     enum PortfolioType: Int {
@@ -57,19 +57,14 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         cell.textLabel?.font = UIFont.font(EKFontType.Light, fontSize: 18)
         cell.textLabel?.backgroundColor = UIColor.clearColor()
         cell.backgroundColor = self.normalCellColor
-        cell.selectionStyle = UITableViewCellSelectionStyle.None
+        cell.layoutMargins = UIEdgeInsetsZero
+        
+        var selectedView = UIView()
+        selectedView.backgroundColor = self.highlightedCellColor
+        cell.selectedBackgroundView = selectedView
         
         return cell
     }
-    
-    func tableView(tableView: UITableView, didHighlightRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.cellForRowAtIndexPath(indexPath)?.backgroundColor = self.highlightedCellColor
-    }
-    
-    func tableView(tableView: UITableView, didUnhighlightRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.cellForRowAtIndexPath(indexPath)?.backgroundColor = self.normalCellColor
-    }
-    
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
