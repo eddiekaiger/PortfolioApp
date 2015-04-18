@@ -12,18 +12,10 @@ class RootContainerViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var scrollView: UIScrollView!
     
-    var pages = [BaseChildViewController]()
+    var pages = [UIViewController]()
     
     var one = BaseChildViewController()
     var two = BaseChildViewController()
-    
-    var contentWidth: CGFloat { return CGFloat(self.pages.count) * self.view.width }
-    var pageWidth: CGFloat { return self.view.width }
-    
-    
-//    convenience init(pages: [UIViewController]) {
-//        self.init()
-//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,7 +44,7 @@ class RootContainerViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLayoutSubviews()
         
         self.scrollView.frame = self.view.frame
-        self.scrollView.contentSize.width = self.contentWidth
+        self.scrollView.contentSize.width = CGFloat(self.pages.count) * self.view.width
         self.scrollView.contentSize.height = self.view.height
         
         for i in 0..<self.pages.count {
@@ -63,27 +55,25 @@ class RootContainerViewController: UIViewController, UIScrollViewDelegate {
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
         
-        let offsetX = scrollView.contentOffset.x
+        // Get exact page position (e.g. 2.5)
+        let positionX: CGFloat = scrollView.contentOffset.x / self.view.width
         
-        let positionX: CGFloat = offsetX / self.pageWidth
-        
-        // Calcualte left and right page index
+        // Calculate left and right page index
         let leftPageIndex: Int = Int(floor(positionX))
         let rightPageIndex: Int = leftPageIndex + 1
         
         // Calculate offset for left and right pages
-        let leftOffset: CGFloat = positionX - floor(positionX)  // Between 0 and 1
-        let rightOffset: CGFloat = -1 + leftOffset              // Between -1 and 0
+        let leftOffset: CGFloat = positionX - floor(positionX)
+        let rightOffset: CGFloat = 1 - leftOffset
         
+        // Notify left page about scroll
         if leftPageIndex >= 0 {
-            pages[leftPageIndex].onViewFractionallyLeft(leftOffset)
+            (pages[leftPageIndex] as! EKPageScrolling).onScrollWithPageOnLeft(leftOffset)
         }
         
+        // Notify right page about scroll
         if rightPageIndex < self.pages.count {
-            pages[rightPageIndex].onViewFractionallyRight(rightOffset)
+            (pages[rightPageIndex] as! EKPageScrolling).onScrollWithPageOnRight(rightOffset)
         }
-        
-        
-//        NSLog("Scrollview offset: %.2f", scrollView.contentOffset.x)
     }
 }

@@ -8,12 +8,7 @@
 
 import UIKit
 
-class BaseChildViewController: UIViewController {
-//    
-//    /**
-//        The
-//    */
-//    var animatingViews : [UIView] = []
+class BaseChildViewController: UIViewController, EKPageScrolling {
     
     var label: UILabel = UILabel()
     
@@ -29,24 +24,12 @@ class BaseChildViewController: UIViewController {
     }
     
     
-    /**
-    Update view when part of it is on the left page currently visible.
-    @param offset A value between 0 and 1 (0 meaning page is fully visible, 1 meaning page is completely to the left of the visible page)
-    */
-    func onViewFractionallyLeft(offset: CGFloat) {
-        
+    func onScrollWithPageOnLeft(offset: CGFloat) {
         self.label.transform = CGAffineTransformMakeScale(1 - offset, 1 - offset)
-        
     }
     
-    /**
-    Update view when part of it is on the right page currently visible.
-    @param offset A value between -1 and 0 (0 meaning page is fully visible, -1 meaning page is completely to the right of the visible page)
-    */
-    func onViewFractionallyRight(offset: CGFloat) {
-        
+    func onScrollWithPageOnRight(offset: CGFloat) {
         self.label.transform = CGAffineTransformMakeRotation(offset)
-        
     }
 
 }

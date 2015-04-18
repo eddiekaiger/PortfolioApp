@@ -14,6 +14,7 @@
 		BAA992E41AE1FF5700756EDF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA992DE1AE1FF5700756EDF /* HomeViewController.swift */; };
 		BAA992E51AE1FF5700756EDF /* RootContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA992DF1AE1FF5700756EDF /* RootContainerViewController.swift */; };
 		BAA992E71AE2000A00756EDF /* UIIView+EK.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA992E61AE2000A00756EDF /* UIIView+EK.swift */; };
+		BAA992F61AE2289100756EDF /* EKPageScrolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA992F51AE2289100756EDF /* EKPageScrolling.swift */; };
 		BAC76CAB1ADE34C50026F4D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC76CAA1ADE34C50026F4D1 /* AppDelegate.swift */; };
 		BAC76CB61ADE34C50026F4D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAC76CB51ADE34C50026F4D1 /* Images.xcassets */; };
 		BAC76CC51ADE34C50026F4D1 /* PortfolioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC76CC41ADE34C50026F4D1 /* PortfolioTests.swift */; };
@@ -42,6 +43,7 @@
 		BAA992DE1AE1FF5700756EDF /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BAA992DF1AE1FF5700756EDF /* RootContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootContainerViewController.swift; sourceTree = "<group>"; };
 		BAA992E61AE2000A00756EDF /* UIIView+EK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIIView+EK.swift"; sourceTree = "<group>"; };
+		BAA992F51AE2289100756EDF /* EKPageScrolling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKPageScrolling.swift; sourceTree = "<group>"; };
 		BAC76CA51ADE34C50026F4D1 /* Portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC76CA91ADE34C50026F4D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAC76CAA1ADE34C50026F4D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,14 @@
 				BAA992DF1AE1FF5700756EDF /* RootContainerViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BAA992F41AE2288900756EDF /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				BAA992F51AE2289100756EDF /* EKPageScrolling.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		BAC76C9C1ADE34C50026F4D1 = {
@@ -163,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				BAA992D71AE1FF5700756EDF /* Extension */,
+				BAA992F41AE2288900756EDF /* Protocol */,
 				BAA992D91AE1FF5700756EDF /* View */,
 				BAA992DB1AE1FF5700756EDF /* ViewController */,
 			);
@@ -298,6 +309,7 @@
 				BAA992E31AE1FF5700756EDF /* HomeTableViewController.swift in Sources */,
 				BAC76CAB1ADE34C50026F4D1 /* AppDelegate.swift in Sources */,
 				BAA992E41AE1FF5700756EDF /* HomeViewController.swift in Sources */,
+				BAA992F61AE2289100756EDF /* EKPageScrolling.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
