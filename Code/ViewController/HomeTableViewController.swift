@@ -70,7 +70,14 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
+        // Deselect cell
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
         var type: PortfolioType = PortfolioType(rawValue: indexPath.row)!
+        
+        // Present VC
+        var containerVC: RootContainerViewController = self.storyboard!.instantiateViewControllerWithIdentifier("RootContainerVC") as! RootContainerViewController
+        self.presentViewController(containerVC, animated: true, completion: nil)
         
 //        switch type {
 //        case .About:

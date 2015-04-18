@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA2CB43E1AE25BAD001E72BE /* ContainerDismissButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2CB43D1AE25BAD001E72BE /* ContainerDismissButton.m */; };
 		BAA992E01AE1FF5700756EDF /* UIFont+EK.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA992D81AE1FF5700756EDF /* UIFont+EK.swift */; };
 		BAA992E11AE1FF5700756EDF /* PortfolioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA992DA1AE1FF5700756EDF /* PortfolioTableViewCell.swift */; };
 		BAA992E21AE1FF5700756EDF /* BaseChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA992DC1AE1FF5700756EDF /* BaseChildViewController.swift */; };
@@ -36,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA2CB43C1AE25BAD001E72BE /* ContainerDismissButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContainerDismissButton.h; path = "../../../../gracecity-iphone/Code/Subclass/ContainerDismissButton.h"; sourceTree = "<group>"; };
+		BA2CB43D1AE25BAD001E72BE /* ContainerDismissButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContainerDismissButton.m; path = "../../../../gracecity-iphone/Code/Subclass/ContainerDismissButton.m"; sourceTree = "<group>"; };
+		BA2CB43F1AE25C49001E72BE /* Portfolio-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Portfolio-Bridging-Header.h"; sourceTree = "<group>"; };
 		BAA992D81AE1FF5700756EDF /* UIFont+EK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+EK.swift"; sourceTree = "<group>"; };
 		BAA992DA1AE1FF5700756EDF /* PortfolioTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioTableViewCell.swift; sourceTree = "<group>"; };
 		BAA992DC1AE1FF5700756EDF /* BaseChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseChildViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 		BAA992D91AE1FF5700756EDF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BA2CB43C1AE25BAD001E72BE /* ContainerDismissButton.h */,
+				BA2CB43D1AE25BAD001E72BE /* ContainerDismissButton.m */,
 				BAA992DA1AE1FF5700756EDF /* PortfolioTableViewCell.swift */,
 			);
 			path = View;
@@ -137,6 +143,7 @@
 		BAC76CA71ADE34C50026F4D1 /* Portfolio */ = {
 			isa = PBXGroup;
 			children = (
+				BA2CB43F1AE25C49001E72BE /* Portfolio-Bridging-Header.h */,
 				BAC76CAA1ADE34C50026F4D1 /* AppDelegate.swift */,
 				BAC76CB51ADE34C50026F4D1 /* Images.xcassets */,
 				BAC76CA81ADE34C50026F4D1 /* Supporting Files */,
@@ -303,6 +310,7 @@
 			files = (
 				BAA992E71AE2000A00756EDF /* UIIView+EK.swift in Sources */,
 				BAA992E01AE1FF5700756EDF /* UIFont+EK.swift in Sources */,
+				BA2CB43E1AE25BAD001E72BE /* ContainerDismissButton.m in Sources */,
 				BAA992E11AE1FF5700756EDF /* PortfolioTableViewCell.swift in Sources */,
 				BAA992E51AE1FF5700756EDF /* RootContainerViewController.swift in Sources */,
 				BAA992E21AE1FF5700756EDF /* BaseChildViewController.swift in Sources */,
@@ -422,8 +430,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Portfolio/Portfolio-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -437,8 +445,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Portfolio/Portfolio-Bridging-Header.h";
 			};
 			name = Release;
 		};

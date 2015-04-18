@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Kk7-d6-l88">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="YZF-W2-MxU">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -126,10 +126,28 @@
             </objects>
             <point key="canvasLocation" x="181" y="-280"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="CG6-ZL-8cL">
+            <objects>
+                <viewController id="nlV-8D-9pZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QeI-X1-aNZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="qoj-yL-Y0K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DJW-eX-1FR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fme-Mt-aQI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181" y="464"/>
+        </scene>
         <!--Root Container View Controller-->
         <scene sceneID="CAH-so-u7a">
             <objects>
-                <viewController id="Kk7-d6-l88" customClass="RootContainerViewController" customModule="Portfolio" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RootContainerVC" id="Kk7-d6-l88" customClass="RootContainerViewController" customModule="Portfolio" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="63Z-oT-QlE"/>
                         <viewControllerLayoutGuide type="bottom" id="itb-7z-a1e"/>
@@ -138,13 +156,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pZI-Ke-lgB">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="baH-kN-6ee">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CX6-3b-1Ka" customClass="ContainerDismissButton">
+                                <rect key="frame" x="270" y="30" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Ix5-BG-uRM"/>
+                                    <constraint firstAttribute="width" secondItem="CX6-3b-1Ka" secondAttribute="height" multiplier="1:1" id="oDH-Jv-YS2"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismiss:" destination="Kk7-d6-l88" eventType="touchUpInside" id="0K6-aa-NMp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pZI-Ke-lgB" firstAttribute="leading" secondItem="86G-2d-rZ2" secondAttribute="leading" placeholder="YES" id="96O-2w-T9Y"/>
+                            <constraint firstItem="itb-7z-a1e" firstAttribute="top" secondItem="pZI-Ke-lgB" secondAttribute="bottom" placeholder="YES" id="G02-83-UEU"/>
+                            <constraint firstItem="pZI-Ke-lgB" firstAttribute="top" secondItem="63Z-oT-QlE" secondAttribute="bottom" placeholder="YES" id="Lsp-hS-ss0"/>
+                            <constraint firstAttribute="trailing" secondItem="pZI-Ke-lgB" secondAttribute="trailing" placeholder="YES" id="ONo-bc-j8f"/>
+                            <constraint firstAttribute="centerX" secondItem="CX6-3b-1Ka" secondAttribute="centerX" id="aIX-V5-7oC"/>
+                            <constraint firstItem="itb-7z-a1e" firstAttribute="bottom" secondItem="pZI-Ke-lgB" secondAttribute="bottom" id="bJE-d2-Egh"/>
+                            <constraint firstItem="CX6-3b-1Ka" firstAttribute="top" secondItem="63Z-oT-QlE" secondAttribute="bottom" constant="10" id="hMF-44-qPZ"/>
+                            <constraint firstItem="pZI-Ke-lgB" firstAttribute="top" secondItem="63Z-oT-QlE" secondAttribute="top" id="qNj-EY-MYV"/>
+                            <constraint firstItem="pZI-Ke-lgB" firstAttribute="top" secondItem="86G-2d-rZ2" secondAttribute="top" id="zlg-7p-fGA"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Lsp-hS-ss0"/>
+                                <exclude reference="qNj-EY-MYV"/>
+                                <exclude reference="bJE-d2-Egh"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
+                        <outlet property="backgroundImageView" destination="pZI-Ke-lgB" id="CNJ-tV-6JL"/>
                         <outlet property="scrollView" destination="baH-kN-6ee" id="rZt-Ae-BQD"/>
                     </connections>
                 </viewController>
