@@ -21,10 +21,6 @@ class RootContainerViewController: UIViewController, UIScrollViewDelegate {
     // View controllers used as pages
     var pages = [UIViewController]()
     
-    var one = BaseChildViewController()
-    var two = BaseChildViewController()
-    var three = BaseChildViewController()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,28 +31,14 @@ class RootContainerViewController: UIViewController, UIScrollViewDelegate {
         self.scrollView.delegate = self
         self.scrollView.backgroundColor = UIColor(white: 0, alpha: 0.6)
         
-        one.view.backgroundColor = UIColor.clearColor()
-        
-        self.addChildViewController(one)
-        self.scrollView.addSubview(one.view)
-        one.didMoveToParentViewController(self)
-        
-        self.pages.append(one)
-        
-        
-        self.addChildViewController(two)
-        self.scrollView.addSubview(two.view)
-        two.didMoveToParentViewController(self)
-        two.view.backgroundColor = UIColor.clearColor()
-        
-        self.pages.append(two)
-        
-        self.addChildViewController(three)
-        self.scrollView.addSubview(three.view)
-        three.didMoveToParentViewController(self)
-        three.view.backgroundColor = UIColor.clearColor()
-        
-        self.pages.append(three)
+        for i in 0...5 {
+            var childVC = BaseChildViewController()
+            self.addChildViewController(childVC)
+            self.scrollView.addSubview(childVC.view)
+            childVC.didMoveToParentViewController(self)
+            childVC.view.backgroundColor = UIColor.clearColor()
+            self.pages.append(childVC)
+        }
         
     }
     
@@ -74,9 +56,8 @@ class RootContainerViewController: UIViewController, UIScrollViewDelegate {
             pages[i].view.frame = CGRectMake(CGFloat(i) * self.view.width, 0, self.view.width, self.view.height)
         }
         
-        // Calculate how big our imageview needs to be for parallax to work well; the more pages we have, the larger the image
-        let imageWidth: CGFloat = CGFloat(self.pages.count-1) * imageShiftRatio *
-            (self.scrollView.contentSize.width - self.view.width) + (imageSideOffset * 2) + self.view.width
+        // Calculate how big our imageview needs to be for parallax to work well
+        let imageWidth: CGFloat = imageShiftRatio * (self.scrollView.contentSize.width - self.view.width) + (imageSideOffset * 2) + self.view.width
 
         // Adjust imageview height based on calculated width
         let imageHeight: CGFloat = self.backgroundImage.size.height * imageWidth / self.backgroundImage.size.width
