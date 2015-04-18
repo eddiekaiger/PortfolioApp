@@ -18,7 +18,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var mottoLabel: UILabel!
     
-    let defaultHeaderHeight: CGFloat = 300
+    var defaultHeaderHeight: CGFloat { return self.view.frame.size.height * 0.4 }
     
     override func viewDidLoad() {
 

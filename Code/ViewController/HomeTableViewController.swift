@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+/* Delegate and data source for HomeViewController's tableview */
+
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     var normalCellColor: UIColor {
@@ -68,7 +70,20 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
+        var type: PortfolioType = PortfolioType(rawValue: indexPath.row)!
         
+//        switch type {
+//        case .About:
+//            
+//        case .Education:
+//            
+//        case .Projects:
+//            
+//        case .Experience:
+//            
+//        case .Contact:
+//            
+//        }
     }
 
     
