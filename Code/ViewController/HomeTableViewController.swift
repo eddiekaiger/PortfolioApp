@@ -47,6 +47,42 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    private func pages(var type: PortfolioType) -> [BaseChildViewController] {
+        
+        switch type {
+        case .About:
+            let aboutIntroVC = pageChildViewController("AboutMeIntroVC")
+            let aboutDescriptionVC = pageChildViewController("AboutMeDescriptionVC")
+            let aboutHobbiesVC = pageChildViewController("AboutMeHobbiesVC")
+            let aboutWWDCVC = pageChildViewController("AboutMeWWDCVC")
+            return [aboutIntroVC, aboutDescriptionVC, aboutHobbiesVC, aboutWWDCVC]
+        default:
+            return []
+        }
+    }
+    
+    private func backgroundImage(var type: PortfolioType) -> UIImage {
+        
+        switch type {
+        case .About:
+            return UIImage(named: "dock.jpg")!
+        case .Education:
+            return UIImage(named: "school.jpg")!
+        case .Projects:
+            return UIImage(named: "coffee.jpg")!
+        case .Experience:
+            return UIImage(named: "city.png")!
+        case .Contact:
+            return UIImage(named: "water.jpeg")!
+        default:
+            return UIImage()
+        }
+    }
+    
+    private func pageChildViewController(identifier: String) -> BaseChildViewController {
+        return self.storyboard!.instantiateViewControllerWithIdentifier(identifier) as! BaseChildViewController
+    }
+    
     // MARK: Delegate & Data Source
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -78,18 +114,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         // Present VC
         var containerVC: RootContainerViewController = self.storyboard!.instantiateViewControllerWithIdentifier("RootContainerVC") as! RootContainerViewController
         
-        switch type {
-        case .About:
-            containerVC.backgroundImage = UIImage(named: "dock.jpg")!
-        case .Education:
-            containerVC.backgroundImage = UIImage(named: "school.jpg")!
-        case .Projects:
-            containerVC.backgroundImage = UIImage(named: "coffee.jpg")!
-        case .Experience:
-            containerVC.backgroundImage = UIImage(named: "city.png")!
-        case .Contact:
-            containerVC.backgroundImage = UIImage(named: "water.jpeg")!
-        }
+        containerVC.backgroundImage = self.backgroundImage(type)
+        containerVC.pages = self.pages(type)
         
         self.presentViewController(containerVC, animated: true, completion: nil)
 

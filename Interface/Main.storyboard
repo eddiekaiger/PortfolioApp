@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -126,10 +127,10 @@
             </objects>
             <point key="canvasLocation" x="181" y="-280"/>
         </scene>
-        <!--View Controller-->
+        <!--About Me Intro View Controller-->
         <scene sceneID="CG6-ZL-8cL">
             <objects>
-                <viewController id="nlV-8D-9pZ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutMeIntroVC" id="nlV-8D-9pZ" customClass="AboutMeIntroViewController" customModule="Portfolio" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QeI-X1-aNZ"/>
                         <viewControllerLayoutGuide type="bottom" id="qoj-yL-Y0K"/>
@@ -137,12 +138,123 @@
                     <view key="view" contentMode="scaleToFill" id="DJW-eX-1FR">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My name is" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ger-ea-KhO">
+                                <rect key="frame" x="256" y="178" width="88" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eddie Kaiger" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncg-wi-Nc7">
+                                <rect key="frame" x="251" y="214" width="98" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Motto" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhi-qP-gDN">
+                                <rect key="frame" x="277" y="371" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wlj-l8-our">
+                                <rect key="frame" x="255" y="255" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Wlj-l8-our" secondAttribute="height" multiplier="1:1" id="IlR-K9-oeH"/>
+                                    <constraint firstAttribute="width" constant="90" id="iCz-Ra-82P"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ncg-wi-Nc7" firstAttribute="top" secondItem="ger-ea-KhO" secondAttribute="bottom" constant="15" id="MDP-X3-Yjm"/>
+                            <constraint firstItem="ger-ea-KhO" firstAttribute="top" secondItem="QeI-X1-aNZ" secondAttribute="bottom" constant="65" id="QdK-Ti-Ivm"/>
+                            <constraint firstAttribute="centerX" secondItem="ger-ea-KhO" secondAttribute="centerX" id="SOK-V0-eg5"/>
+                            <constraint firstAttribute="centerX" secondItem="Mhi-qP-gDN" secondAttribute="centerX" constant="-1" id="TPu-HA-0nF"/>
+                            <constraint firstItem="Mhi-qP-gDN" firstAttribute="leading" secondItem="DJW-eX-1FR" secondAttribute="leadingMargin" constant="20" id="W4J-fj-HMp"/>
+                            <constraint firstItem="Mhi-qP-gDN" firstAttribute="trailing" secondItem="DJW-eX-1FR" secondAttribute="trailingMargin" constant="-20" id="XhZ-Ge-2uY"/>
+                            <constraint firstItem="Wlj-l8-our" firstAttribute="top" secondItem="Ncg-wi-Nc7" secondAttribute="bottom" constant="20" id="Y3H-AV-X70"/>
+                            <constraint firstAttribute="centerY" secondItem="Wlj-l8-our" secondAttribute="centerY" id="gNK-es-POo"/>
+                            <constraint firstAttribute="centerX" secondItem="Ncg-wi-Nc7" secondAttribute="centerX" id="gZU-FM-aJa"/>
+                            <constraint firstItem="Wlj-l8-our" firstAttribute="top" secondItem="Ncg-wi-Nc7" secondAttribute="bottom" constant="20" id="lMP-a4-lz8"/>
+                            <constraint firstItem="Mhi-qP-gDN" firstAttribute="top" secondItem="Wlj-l8-our" secondAttribute="bottom" constant="26" id="nau-X4-JDG"/>
+                            <constraint firstAttribute="centerX" secondItem="Mhi-qP-gDN" secondAttribute="centerX" id="xYg-v1-j0a"/>
+                            <constraint firstAttribute="centerX" secondItem="Wlj-l8-our" secondAttribute="centerX" id="zJ6-S0-6k8"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="QdK-Ti-Ivm"/>
+                                <exclude reference="TPu-HA-0nF"/>
+                                <exclude reference="W4J-fj-HMp"/>
+                                <exclude reference="XhZ-Ge-2uY"/>
+                                <exclude reference="Y3H-AV-X70"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="mottoLabel" destination="Mhi-qP-gDN" id="sJ7-J8-Fxs"/>
+                        <outlet property="nameHeaderLabel" destination="ger-ea-KhO" id="SZ9-sM-ENb"/>
+                        <outlet property="nameLabel" destination="Ncg-wi-Nc7" id="kOJ-57-OpH"/>
+                        <outlet property="profileImageView" destination="Wlj-l8-our" id="ocb-lt-rCy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fme-Mt-aQI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="181" y="464"/>
+            <point key="canvasLocation" x="181" y="440"/>
+        </scene>
+        <!--About Me Description View Controller-->
+        <scene sceneID="PFG-oV-mSx">
+            <objects>
+                <viewController storyboardIdentifier="AboutMeDescriptionVC" id="XBb-Yz-IBR" customClass="AboutMeDescriptionViewController" customModule="Portfolio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="62V-Fc-p7l"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hwt-FV-g7u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yez-I5-Gql">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fXC-cm-kaR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="853" y="440"/>
+        </scene>
+        <!--About Me Hobbies View Controller-->
+        <scene sceneID="lsV-dt-9fg">
+            <objects>
+                <viewController storyboardIdentifier="AboutMeHobbiesVC" id="cX5-NT-tE7" customClass="AboutMeHobbiesViewController" customModule="Portfolio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BUD-NL-kcO"/>
+                        <viewControllerLayoutGuide type="bottom" id="cpr-NZ-AAZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r9y-4T-SIr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pb3-n5-sCJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1544" y="440"/>
+        </scene>
+        <!--About MeWWDC View Controller-->
+        <scene sceneID="9vL-mH-JpS">
+            <objects>
+                <viewController storyboardIdentifier="AboutMeWWDCVC" id="Mrr-oz-L6b" customClass="AboutMeWWDCViewController" customModule="Portfolio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8EF-eU-EuV"/>
+                        <viewControllerLayoutGuide type="bottom" id="NND-gT-8Se"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ns9-tg-0tf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ufy-mW-cGu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2227" y="440"/>
         </scene>
         <!--Root Container View Controller-->
         <scene sceneID="CAH-so-u7a">
@@ -203,7 +315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="keM-AI-5hh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="897" y="-280"/>
+            <point key="canvasLocation" x="853" y="-280"/>
         </scene>
     </scenes>
     <resources>

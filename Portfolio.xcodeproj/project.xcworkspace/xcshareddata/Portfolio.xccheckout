@@ -7,24 +7,20 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>94A78F05-0950-456A-B212-7669020C013F</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Portfolio</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>3836D9F4FC568D01FC473C121AD6D0905087A514</key>
 		<string>https://bitbucket.org/eddiekaiger/gracecity-iphone.git</string>
-		<key>CAAAF59D1EAA3A0BCF5D9BEAA27A659B80B247BE</key>
-		<string>https://github.com/JoeFerrucci/FoodsterApp.git</string>
 		<key>F78C33298423B255ECC370A86677A8B248E1E876</key>
 		<string>https://github.com/eddiekaiger/PortfolioApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Portfolio.xcodeproj</string>
+	<string>Portfolio.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>3836D9F4FC568D01FC473C121AD6D0905087A514</key>
 		<string>../../../gracecity-iphone</string>
-		<key>CAAAF59D1EAA3A0BCF5D9BEAA27A659B80B247BE</key>
-		<string>../../../Dropbox/FoodsterApp</string>
 		<key>F78C33298423B255ECC370A86677A8B248E1E876</key>
 		<string>../..</string>
 	</dict>
@@ -36,14 +32,6 @@
 	<string>F78C33298423B255ECC370A86677A8B248E1E876</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>CAAAF59D1EAA3A0BCF5D9BEAA27A659B80B247BE</string>
-			<key>IDESourceControlWCCName</key>
-			<string>FoodsterApp</string>
-		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

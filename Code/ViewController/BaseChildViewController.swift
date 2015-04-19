@@ -11,36 +11,22 @@ import UIKit
 class BaseChildViewController: UIViewController, EKPageScrolling {
     
     var label = UILabel()
+
+    let defaultTextColor = UIColor.whiteColor()
     
     var imageView = UIImageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        self.imageView.frame = self.view.frame
-//        self.imageView.image = UIImage(named: "City.png")
-//        self.view.addSubview(self.imageView)
-        
-        // Do any additional setup after loading the view.
-        
-        self.label.frame = CGRectMake(0, 200, self.view.width, 350)
-        self.label.text = "Purus fusce sagittis vitae lectus dapibus. Donec nulla. Purus metus nunc turpis diam nisl bibendum. Lorem nulla mollis turpis sem vestibulum phasellus enim ullamcorper rhoncus consectetuer elementum fames."
-        self.label.textAlignment = NSTextAlignment.Center
-        self.label.numberOfLines = 0
-        self.label.textColor = UIColor.whiteColor()
-        self.view.addSubview(self.label)
-        
-        
+
+        self.view.backgroundColor = UIColor.clearColor()
     }
     
     
-    func onScrollWithPageOnLeft(offset: CGFloat) {
-        
-        self.label.transform = CGAffineTransformMakeScale(1 - offset, 1 - offset)
-    }
+    // MARK: - EKScrollingDelegate
     
-    func onScrollWithPageOnRight(offset: CGFloat) {
-        self.label.transform = CGAffineTransformMakeRotation(offset)
-    }
+    /** IMPLEMENT IN SUBCLASS **/
+    func onScrollWithPageOnLeft(offset: CGFloat) {}
+    func onScrollWithPageOnRight(offset: CGFloat) {}
 
 }

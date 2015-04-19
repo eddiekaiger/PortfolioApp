@@ -29,13 +29,23 @@ class RootContainerViewController: UIViewController, UIScrollViewDelegate {
         
         self.view.clipsToBounds = true
         
-        for i in 0...5 {
-            var childVC = BaseChildViewController()
-            self.addChildViewController(childVC)
-            self.scrollView.addSubview(childVC.view)
-            childVC.didMoveToParentViewController(self)
-            childVC.view.backgroundColor = UIColor.clearColor()
-            self.pages.append(childVC)
+        
+        if self.pages.count == 0 {  // TODO: Remove when done testing
+            for i in 0...5 {
+                var childVC = BaseChildViewController()
+                self.addChildViewController(childVC)
+                self.scrollView.addSubview(childVC.view)
+                childVC.didMoveToParentViewController(self)
+                self.pages.append(childVC)
+            }
+        } else {
+            
+            for i in 0..<self.pages.count {
+                let childVC = self.pages[i]
+                self.addChildViewController(childVC)
+                self.scrollView.addSubview(childVC.view)
+                childVC.didMoveToParentViewController(self)
+            }
         }
     }
     
