@@ -22,8 +22,13 @@
 		BAC76CDE1ADE4C670026F4D1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAC76CD91ADE4C670026F4D1 /* LaunchScreen.xib */; };
 		BAC76CDF1ADE4C670026F4D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAC76CDA1ADE4C670026F4D1 /* Main.storyboard */; };
 		BAC76CE01ADE4C670026F4D1 /* PortfolioTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAC76CDB1ADE4C670026F4D1 /* PortfolioTableViewCell.xib */; };
-		BAC76CE71ADFACCE0026F4D1 /* City.png in Resources */ = {isa = PBXBuildFile; fileRef = BAC76CE51ADFACCE0026F4D1 /* City.png */; };
+		BAC76CE71ADFACCE0026F4D1 /* city.png in Resources */ = {isa = PBXBuildFile; fileRef = BAC76CE51ADFACCE0026F4D1 /* city.png */; };
 		BAC76CE81ADFACCE0026F4D1 /* Profile-Pic.png in Resources */ = {isa = PBXBuildFile; fileRef = BAC76CE61ADFACCE0026F4D1 /* Profile-Pic.png */; };
+		BAFA3A1F1AE35EA00004CD8C /* school.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAFA3A1E1AE35EA00004CD8C /* school.jpg */; };
+		BAFA3A221AE364FC0004CD8C /* coffee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAFA3A201AE364FC0004CD8C /* coffee.jpg */; };
+		BAFA3A231AE364FC0004CD8C /* dock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAFA3A211AE364FC0004CD8C /* dock.jpg */; };
+		BAFA3A271AE365E30004CD8C /* bay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAFA3A261AE365E30004CD8C /* bay.jpg */; };
+		BAFA3A291AE367990004CD8C /* water.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BAFA3A281AE367990004CD8C /* water.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +63,13 @@
 		BAC76CD91ADE4C670026F4D1 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		BAC76CDA1ADE4C670026F4D1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Interface/Main.storyboard; sourceTree = "<group>"; };
 		BAC76CDB1ADE4C670026F4D1 /* PortfolioTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PortfolioTableViewCell.xib; sourceTree = "<group>"; };
-		BAC76CE51ADFACCE0026F4D1 /* City.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = City.png; sourceTree = "<group>"; };
+		BAC76CE51ADFACCE0026F4D1 /* city.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = city.png; sourceTree = "<group>"; };
 		BAC76CE61ADFACCE0026F4D1 /* Profile-Pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Profile-Pic.png"; sourceTree = "<group>"; };
+		BAFA3A1E1AE35EA00004CD8C /* school.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = school.jpg; sourceTree = "<group>"; };
+		BAFA3A201AE364FC0004CD8C /* coffee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coffee.jpg; sourceTree = "<group>"; };
+		BAFA3A211AE364FC0004CD8C /* dock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dock.jpg; sourceTree = "<group>"; };
+		BAFA3A261AE365E30004CD8C /* bay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bay.jpg; sourceTree = "<group>"; };
+		BAFA3A281AE367990004CD8C /* water.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = water.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,7 +200,12 @@
 		BAC76CD71ADE4C670026F4D1 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
-				BAC76CE51ADFACCE0026F4D1 /* City.png */,
+				BAFA3A261AE365E30004CD8C /* bay.jpg */,
+				BAFA3A201AE364FC0004CD8C /* coffee.jpg */,
+				BAFA3A281AE367990004CD8C /* water.jpeg */,
+				BAFA3A211AE364FC0004CD8C /* dock.jpg */,
+				BAFA3A1E1AE35EA00004CD8C /* school.jpg */,
+				BAC76CE51ADFACCE0026F4D1 /* city.png */,
 				BAC76CE61ADFACCE0026F4D1 /* Profile-Pic.png */,
 			);
 			path = Graphics;
@@ -254,6 +269,7 @@
 				TargetAttributes = {
 					BAC76CA41ADE34C50026F4D1 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 5KT4ZVPMF8;
 					};
 					BAC76CBD1ADE34C50026F4D1 = {
 						CreatedOnToolsVersion = 6.3;
@@ -286,9 +302,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAC76CE01ADE4C670026F4D1 /* PortfolioTableViewCell.xib in Resources */,
+				BAFA3A271AE365E30004CD8C /* bay.jpg in Resources */,
+				BAFA3A221AE364FC0004CD8C /* coffee.jpg in Resources */,
+				BAFA3A1F1AE35EA00004CD8C /* school.jpg in Resources */,
 				BAC76CDF1ADE4C670026F4D1 /* Main.storyboard in Resources */,
+				BAFA3A231AE364FC0004CD8C /* dock.jpg in Resources */,
 				BAC76CE81ADFACCE0026F4D1 /* Profile-Pic.png in Resources */,
-				BAC76CE71ADFACCE0026F4D1 /* City.png in Resources */,
+				BAC76CE71ADFACCE0026F4D1 /* city.png in Resources */,
+				BAFA3A291AE367990004CD8C /* water.jpeg in Resources */,
 				BAC76CDE1ADE4C670026F4D1 /* LaunchScreen.xib in Resources */,
 				BAC76CB61ADE34C50026F4D1 /* Images.xcassets in Resources */,
 			);
@@ -426,10 +447,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Portfolio/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Portfolio/Portfolio-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -441,10 +465,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Portfolio/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Portfolio/Portfolio-Bridging-Header.h";
 			};

@@ -11,12 +11,12 @@ import UIKit
 class RootContainerViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var backgroundImageView: UIImageView!
+    @IBOutlet weak private var backgroundImageView: UIImageView!
     
     // Default image
-    var backgroundImage = UIImage(named: "City.png")!
-    let imageSideOffset: CGFloat = 50
-    let imageShiftRatio: CGFloat = 0.25
+    var backgroundImage = UIImage(named: "city.png")!
+    private let imageSideOffset: CGFloat = 50
+    private let imageShiftRatio: CGFloat = 0.25
     
     // View controllers used as pages
     var pages = [UIViewController]()
@@ -24,12 +24,10 @@ class RootContainerViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.backgroundImageView.image = self.backgroundImage
-        self.backgroundImageView.contentMode = UIViewContentMode.ScaleAspectFill
+        configureBackgroundImage()
+        configureScrollView()
         
-        self.scrollView.pagingEnabled = true
-        self.scrollView.delegate = self
-        self.scrollView.backgroundColor = UIColor(white: 0, alpha: 0.6)
+        self.view.clipsToBounds = true
         
         for i in 0...5 {
             var childVC = BaseChildViewController()
@@ -39,7 +37,6 @@ class RootContainerViewController: UIViewController, UIScrollViewDelegate {
             childVC.view.backgroundColor = UIColor.clearColor()
             self.pages.append(childVC)
         }
-        
     }
     
     override func viewDidLayoutSubviews() {
@@ -63,15 +60,32 @@ class RootContainerViewController: UIViewController, UIScrollViewDelegate {
         let imageHeight: CGFloat = self.backgroundImage.size.height * imageWidth / self.backgroundImage.size.width
         
         // Set imageview frame
-        self.backgroundImageView.frame = CGRectMake(-scrollView.contentOffset.x - imageSideOffset, 0, imageWidth, imageHeight)
+        self.backgroundImageView.frame = CGRectMake(-scrollView.contentOffset.x - imageSideOffset,
+            -((imageHeight / 2.0) - (self.view.height / 2.0)) / 2.0, imageWidth, imageHeight)
+    }
+    
+    // MARK: Configure
+    
+    private func configureBackgroundImage() {
+        self.backgroundImageView.image = self.backgroundImage
+        self.backgroundImageView.contentMode = UIViewContentMode.ScaleAspectFill
+    }
+    
+    private func configureScrollView() {
+        self.scrollView.pagingEnabled = true
+        self.scrollView.delegate = self
+        self.scrollView.backgroundColor = UIColor(white: 0, alpha: 0.5)
+        self.scrollView.indicatorStyle = UIScrollViewIndicatorStyle.White
     }
     
     // MARK: UIScrollView Delegate
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
         
+        let offsetX: CGFloat = scrollView.contentOffset.x
+        
         // Get exact page position (e.g. 2.5)
-        let positionX: CGFloat = scrollView.contentOffset.x / self.view.width
+        let positionX: CGFloat = offsetX / self.view.width
         
         // Calculate left and right page index
         let leftPageIndex: Int = Int(floor(positionX))
@@ -91,14 +105,17 @@ class RootContainerViewController: UIViewController, UIScrollViewDelegate {
             (pages[rightPageIndex] as! EKPageScrolling).onScrollWithPageOnRight(rightOffset)
         }
         
-        // Adjust background parallax
-        self.backgroundImageView.left = -self.scrollView.contentOffset.x * imageShiftRatio - imageSideOffset
+        // Adjust background parallax (but stay within bounds)
+        let imageLeftAdjust: CGFloat = -offsetX * imageShiftRatio - imageSideOffset
+        if imageLeftAdjust < 0 && imageLeftAdjust + self.backgroundImageView.width > self.view.width {
+            self.backgroundImageView.left = imageLeftAdjust
+        }
     }
     
     
     // MARK: Actions
     
-    @IBAction func dismiss(sender: AnyObject) {
+    @IBAction private func dismiss(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     

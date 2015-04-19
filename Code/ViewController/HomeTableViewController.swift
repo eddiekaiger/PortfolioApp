@@ -13,15 +13,15 @@ import UIKit
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
-    var normalCellColor: UIColor {
+    private var normalCellColor: UIColor {
         return UIColor(red: 0, green: 0, blue: 0, alpha: 0.4)
     }
     
-    var highlightedCellColor: UIColor {
+    private var highlightedCellColor: UIColor {
         return UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
     }
     
-    enum PortfolioType: Int {
+    private enum PortfolioType: Int {
         case About = 0
         case Education = 1
         case Projects = 2
@@ -31,7 +31,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     // MARK: Getters
     
-    func stringForPortfolioType(var type: PortfolioType) -> String {
+    private func stringForPortfolioType(var type: PortfolioType) -> String {
         
         switch type {
         case .About:
@@ -77,20 +77,22 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         
         // Present VC
         var containerVC: RootContainerViewController = self.storyboard!.instantiateViewControllerWithIdentifier("RootContainerVC") as! RootContainerViewController
-        self.presentViewController(containerVC, animated: true, completion: nil)
         
-//        switch type {
-//        case .About:
-//            
-//        case .Education:
-//            
-//        case .Projects:
-//            
-//        case .Experience:
-//            
-//        case .Contact:
-//            
-//        }
+        switch type {
+        case .About:
+            containerVC.backgroundImage = UIImage(named: "dock.jpg")!
+        case .Education:
+            containerVC.backgroundImage = UIImage(named: "school.jpg")!
+        case .Projects:
+            containerVC.backgroundImage = UIImage(named: "coffee.jpg")!
+        case .Experience:
+            containerVC.backgroundImage = UIImage(named: "city.png")!
+        case .Contact:
+            containerVC.backgroundImage = UIImage(named: "water.jpeg")!
+        }
+        
+        self.presentViewController(containerVC, animated: true, completion: nil)
+
     }
 
     
