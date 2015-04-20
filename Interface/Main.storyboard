@@ -184,10 +184,10 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="QdK-Ti-Ivm"/>
+                                <exclude reference="Y3H-AV-X70"/>
                                 <exclude reference="TPu-HA-0nF"/>
                                 <exclude reference="W4J-fj-HMp"/>
                                 <exclude reference="XhZ-Ge-2uY"/>
-                                <exclude reference="Y3H-AV-X70"/>
                             </mask>
                         </variation>
                     </view>
@@ -213,8 +213,24 @@
                     <view key="view" contentMode="scaleToFill" id="yez-I5-Gql">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXx-PK-aZ5">
+                                <rect key="frame" x="36" y="289" width="528" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="OXx-PK-aZ5" secondAttribute="centerY" id="UMP-cO-8fg"/>
+                            <constraint firstItem="OXx-PK-aZ5" firstAttribute="leading" secondItem="yez-I5-Gql" secondAttribute="leadingMargin" constant="20" id="lCU-fs-2eN"/>
+                            <constraint firstItem="OXx-PK-aZ5" firstAttribute="trailing" secondItem="yez-I5-Gql" secondAttribute="trailingMargin" constant="-20" id="uvz-JD-g6Q"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="OXx-PK-aZ5" id="uo0-dB-g9R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fXC-cm-kaR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -287,6 +303,13 @@
                                     <action selector="dismiss:" destination="Kk7-d6-l88" eventType="touchUpInside" id="0K6-aa-NMp"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ScrollRight.png" translatesAutoresizingMaskIntoConstraints="NO" id="fdE-64-cZt">
+                                <rect key="frame" x="270" y="550" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="2IG-aF-1W9"/>
+                                    <constraint firstAttribute="height" constant="30" id="Cyg-aA-8vt"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -296,6 +319,8 @@
                             <constraint firstAttribute="trailing" secondItem="pZI-Ke-lgB" secondAttribute="trailing" placeholder="YES" id="ONo-bc-j8f"/>
                             <constraint firstAttribute="centerX" secondItem="CX6-3b-1Ka" secondAttribute="centerX" id="aIX-V5-7oC"/>
                             <constraint firstItem="itb-7z-a1e" firstAttribute="bottom" secondItem="pZI-Ke-lgB" secondAttribute="bottom" id="bJE-d2-Egh"/>
+                            <constraint firstAttribute="centerX" secondItem="fdE-64-cZt" secondAttribute="centerX" id="bno-gb-P8E"/>
+                            <constraint firstItem="itb-7z-a1e" firstAttribute="top" secondItem="fdE-64-cZt" secondAttribute="bottom" constant="20" id="h6l-Je-A3Y"/>
                             <constraint firstItem="CX6-3b-1Ka" firstAttribute="top" secondItem="63Z-oT-QlE" secondAttribute="bottom" constant="10" id="hMF-44-qPZ"/>
                             <constraint firstItem="pZI-Ke-lgB" firstAttribute="top" secondItem="63Z-oT-QlE" secondAttribute="top" id="qNj-EY-MYV"/>
                             <constraint firstItem="pZI-Ke-lgB" firstAttribute="top" secondItem="86G-2d-rZ2" secondAttribute="top" id="zlg-7p-fGA"/>
@@ -310,6 +335,7 @@
                     </view>
                     <connections>
                         <outlet property="backgroundImageView" destination="pZI-Ke-lgB" id="CNJ-tV-6JL"/>
+                        <outlet property="scrollRightImageView" destination="fdE-64-cZt" id="FmZ-lZ-SmT"/>
                         <outlet property="scrollView" destination="baH-kN-6ee" id="rZt-Ae-BQD"/>
                     </connections>
                 </viewController>
@@ -320,6 +346,7 @@
     </scenes>
     <resources>
         <image name="Profile-Pic.png" width="893" height="893"/>
+        <image name="ScrollRight.png" width="99" height="58"/>
         <image name="city.png" width="2374" height="3166"/>
     </resources>
 </document>

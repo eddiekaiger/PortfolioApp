@@ -11,6 +11,7 @@ import UIKit
 
 enum EKFontType {
     case Light
+    case LightItalic
     case Normal
     case Bold
 }
@@ -24,6 +25,8 @@ extension UIFont {
         switch type {
         case .Light:
             fontString = "Light"
+        case .LightItalic:
+            fontString = "LightOblique"
         case .Normal:
             fontString = "Book"
         case .Bold:

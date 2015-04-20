@@ -11,6 +11,8 @@
 		BA344F201AE38E1600F2E44E /* AboutMeDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA344F1F1AE38E1600F2E44E /* AboutMeDescriptionViewController.swift */; };
 		BA344F221AE38E5500F2E44E /* AboutMeHobbiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA344F211AE38E5500F2E44E /* AboutMeHobbiesViewController.swift */; };
 		BA344F241AE38E6100F2E44E /* AboutMeWWDCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA344F231AE38E6100F2E44E /* AboutMeWWDCViewController.swift */; };
+		BA344F271AE4EC0800F2E44E /* ScrollRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA344F251AE4EC0800F2E44E /* ScrollRight@2x.png */; };
+		BA344F281AE4EC0800F2E44E /* ScrollRight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA344F261AE4EC0800F2E44E /* ScrollRight@3x.png */; };
 		BAA992E01AE1FF5700756EDF /* UIFont+EK.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA992D81AE1FF5700756EDF /* UIFont+EK.swift */; };
 		BAA992E11AE1FF5700756EDF /* PortfolioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA992DA1AE1FF5700756EDF /* PortfolioTableViewCell.swift */; };
 		BAA992E21AE1FF5700756EDF /* BaseChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA992DC1AE1FF5700756EDF /* BaseChildViewController.swift */; };
@@ -52,6 +54,8 @@
 		BA344F1F1AE38E1600F2E44E /* AboutMeDescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutMeDescriptionViewController.swift; sourceTree = "<group>"; };
 		BA344F211AE38E5500F2E44E /* AboutMeHobbiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutMeHobbiesViewController.swift; sourceTree = "<group>"; };
 		BA344F231AE38E6100F2E44E /* AboutMeWWDCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutMeWWDCViewController.swift; sourceTree = "<group>"; };
+		BA344F251AE4EC0800F2E44E /* ScrollRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScrollRight@2x.png"; sourceTree = "<group>"; };
+		BA344F261AE4EC0800F2E44E /* ScrollRight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScrollRight@3x.png"; sourceTree = "<group>"; };
 		BAA992D81AE1FF5700756EDF /* UIFont+EK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+EK.swift"; sourceTree = "<group>"; };
 		BAA992DA1AE1FF5700756EDF /* PortfolioTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioTableViewCell.swift; sourceTree = "<group>"; };
 		BAA992DC1AE1FF5700756EDF /* BaseChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseChildViewController.swift; sourceTree = "<group>"; };
@@ -212,6 +216,8 @@
 		BAC76CD71ADE4C670026F4D1 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				BA344F251AE4EC0800F2E44E /* ScrollRight@2x.png */,
+				BA344F261AE4EC0800F2E44E /* ScrollRight@3x.png */,
 				BAFA3A261AE365E30004CD8C /* bay.jpg */,
 				BAFA3A201AE364FC0004CD8C /* coffee.jpg */,
 				BAFA3A281AE367990004CD8C /* water.jpeg */,
@@ -321,6 +327,8 @@
 				BAFA3A231AE364FC0004CD8C /* dock.jpg in Resources */,
 				BAC76CE81ADFACCE0026F4D1 /* Profile-Pic.png in Resources */,
 				BAC76CE71ADFACCE0026F4D1 /* city.png in Resources */,
+				BA344F281AE4EC0800F2E44E /* ScrollRight@3x.png in Resources */,
+				BA344F271AE4EC0800F2E44E /* ScrollRight@2x.png in Resources */,
 				BAFA3A291AE367990004CD8C /* water.jpeg in Resources */,
 				BAC76CDE1ADE4C670026F4D1 /* LaunchScreen.xib in Resources */,
 				BAC76CB61ADE34C50026F4D1 /* Images.xcassets in Resources */,

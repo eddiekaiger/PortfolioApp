@@ -12,6 +12,7 @@ class RootContainerViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak private var backgroundImageView: UIImageView!
+    @IBOutlet weak private var scrollRightImageView: UIImageView!
     
     // Default image
     var backgroundImage = UIImage(named: "city.png")!
@@ -93,6 +94,9 @@ class RootContainerViewController: UIViewController, UIScrollViewDelegate {
     func scrollViewDidScroll(scrollView: UIScrollView) {
         
         let offsetX: CGFloat = scrollView.contentOffset.x
+        
+        // Make scrollRight fade out
+        self.scrollRightImageView.alpha = 1 - (offsetX * 0.01);
         
         // Get exact page position (e.g. 2.5)
         let positionX: CGFloat = offsetX / self.view.width

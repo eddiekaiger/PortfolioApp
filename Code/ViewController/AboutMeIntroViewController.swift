@@ -52,10 +52,6 @@ class AboutMeIntroViewController: BaseChildViewController {
         self.mottoLabel.numberOfLines = 0
         self.mottoLabel.textAlignment = .Center
         self.mottoLabel.font = UIFont.font(EKFontType.Light, fontSize: 16)
-        
-        /**
-I consider myself a developer, a thinker, and a creator. I am a 19-year-old student of computer science as well as a hobbyist iOS developer who constantly loves to tinker, learn, and stretch the limits of my abilities. My passion for mobile development lies at the intersection of my love for excellent design and quality code.
-        */
     }
     
     // MARK: - EKScrollingDelegate
