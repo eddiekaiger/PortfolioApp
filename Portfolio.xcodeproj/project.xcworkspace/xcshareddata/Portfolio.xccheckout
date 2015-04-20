@@ -20,7 +20,7 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>3836D9F4FC568D01FC473C121AD6D0905087A514</key>
-		<string>../../../../gracecity-iphone</string>
+		<string>../../../gracecity-iphone</string>
 		<key>F78C33298423B255ECC370A86677A8B248E1E876</key>
 		<string>../..</string>
 	</dict>

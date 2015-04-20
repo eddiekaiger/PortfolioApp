@@ -29,6 +29,22 @@
 		BAC76CE01ADE4C670026F4D1 /* PortfolioTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAC76CDB1ADE4C670026F4D1 /* PortfolioTableViewCell.xib */; };
 		BAC76CE71ADFACCE0026F4D1 /* city.png in Resources */ = {isa = PBXBuildFile; fileRef = BAC76CE51ADFACCE0026F4D1 /* city.png */; };
 		BAC76CE81ADFACCE0026F4D1 /* Profile-Pic.png in Resources */ = {isa = PBXBuildFile; fileRef = BAC76CE61ADFACCE0026F4D1 /* Profile-Pic.png */; };
+		BAE06D251AE56A5D00ED245F /* ProjectsExaltedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06D241AE56A5D00ED245F /* ProjectsExaltedViewController.swift */; };
+		BAE06D271AE56A6800ED245F /* ProjectsAngelhackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06D261AE56A6800ED245F /* ProjectsAngelhackViewController.swift */; };
+		BAE06D291AE56A7200ED245F /* ProjectsWeeblogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06D281AE56A7200ED245F /* ProjectsWeeblogViewController.swift */; };
+		BAE06D2B1AE56A7B00ED245F /* ProjectsSpotrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06D2A1AE56A7B00ED245F /* ProjectsSpotrViewController.swift */; };
+		BAE06D2D1AE56A8A00ED245F /* ProjectsLeapFrogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06D2C1AE56A8A00ED245F /* ProjectsLeapFrogViewController.swift */; };
+		BAE06D2F1AE56AA700ED245F /* EduIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06D2E1AE56AA700ED245F /* EduIntroViewController.swift */; };
+		BAE06D311AE56AB700ED245F /* EduGraduationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06D301AE56AB700ED245F /* EduGraduationViewController.swift */; };
+		BAE06D331AE56ABF00ED245F /* EduGPAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06D321AE56ABF00ED245F /* EduGPAViewController.swift */; };
+		BAE06D351AE56ACB00ED245F /* EduCourseworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06D341AE56ACB00ED245F /* EduCourseworkViewController.swift */; };
+		BAE06D371AE56AD300ED245F /* EduFunFactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06D361AE56AD300ED245F /* EduFunFactViewController.swift */; };
+		BAE06D391AE56AE800ED245F /* ExpTruliaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06D381AE56AE800ED245F /* ExpTruliaViewController.swift */; };
+		BAE06D3B1AE56B0100ED245F /* ExpTGNIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06D3A1AE56B0100ED245F /* ExpTGNIntroViewController.swift */; };
+		BAE06D3D1AE56B0800ED245F /* ExpTGNMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06D3C1AE56B0800ED245F /* ExpTGNMoreViewController.swift */; };
+		BAE06D3F1AE56B1000ED245F /* ExpWeeblyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06D3E1AE56B1000ED245F /* ExpWeeblyViewController.swift */; };
+		BAE06D411AE56B3D00ED245F /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06D401AE56B3D00ED245F /* ContactViewController.swift */; };
+		BAE06D431AE56B4500ED245F /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06D421AE56B4500ED245F /* AboutAppViewController.swift */; };
 		BAFA3A1F1AE35EA00004CD8C /* school.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAFA3A1E1AE35EA00004CD8C /* school.jpg */; };
 		BAFA3A221AE364FC0004CD8C /* coffee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAFA3A201AE364FC0004CD8C /* coffee.jpg */; };
 		BAFA3A231AE364FC0004CD8C /* dock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAFA3A211AE364FC0004CD8C /* dock.jpg */; };
@@ -76,6 +92,22 @@
 		BAC76CDB1ADE4C670026F4D1 /* PortfolioTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PortfolioTableViewCell.xib; sourceTree = "<group>"; };
 		BAC76CE51ADFACCE0026F4D1 /* city.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = city.png; sourceTree = "<group>"; };
 		BAC76CE61ADFACCE0026F4D1 /* Profile-Pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Profile-Pic.png"; sourceTree = "<group>"; };
+		BAE06D241AE56A5D00ED245F /* ProjectsExaltedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsExaltedViewController.swift; sourceTree = "<group>"; };
+		BAE06D261AE56A6800ED245F /* ProjectsAngelhackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsAngelhackViewController.swift; sourceTree = "<group>"; };
+		BAE06D281AE56A7200ED245F /* ProjectsWeeblogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsWeeblogViewController.swift; sourceTree = "<group>"; };
+		BAE06D2A1AE56A7B00ED245F /* ProjectsSpotrViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsSpotrViewController.swift; sourceTree = "<group>"; };
+		BAE06D2C1AE56A8A00ED245F /* ProjectsLeapFrogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsLeapFrogViewController.swift; sourceTree = "<group>"; };
+		BAE06D2E1AE56AA700ED245F /* EduIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EduIntroViewController.swift; sourceTree = "<group>"; };
+		BAE06D301AE56AB700ED245F /* EduGraduationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EduGraduationViewController.swift; sourceTree = "<group>"; };
+		BAE06D321AE56ABF00ED245F /* EduGPAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EduGPAViewController.swift; sourceTree = "<group>"; };
+		BAE06D341AE56ACB00ED245F /* EduCourseworkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EduCourseworkViewController.swift; sourceTree = "<group>"; };
+		BAE06D361AE56AD300ED245F /* EduFunFactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EduFunFactViewController.swift; sourceTree = "<group>"; };
+		BAE06D381AE56AE800ED245F /* ExpTruliaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpTruliaViewController.swift; sourceTree = "<group>"; };
+		BAE06D3A1AE56B0100ED245F /* ExpTGNIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpTGNIntroViewController.swift; sourceTree = "<group>"; };
+		BAE06D3C1AE56B0800ED245F /* ExpTGNMoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpTGNMoreViewController.swift; sourceTree = "<group>"; };
+		BAE06D3E1AE56B1000ED245F /* ExpWeeblyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpWeeblyViewController.swift; sourceTree = "<group>"; };
+		BAE06D401AE56B3D00ED245F /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		BAE06D421AE56B4500ED245F /* AboutAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutAppViewController.swift; sourceTree = "<group>"; };
 		BAFA3A1E1AE35EA00004CD8C /* school.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = school.jpg; sourceTree = "<group>"; };
 		BAFA3A201AE364FC0004CD8C /* coffee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coffee.jpg; sourceTree = "<group>"; };
 		BAFA3A211AE364FC0004CD8C /* dock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dock.jpg; sourceTree = "<group>"; };
@@ -132,6 +164,22 @@
 				BA344F1F1AE38E1600F2E44E /* AboutMeDescriptionViewController.swift */,
 				BA344F211AE38E5500F2E44E /* AboutMeHobbiesViewController.swift */,
 				BA344F231AE38E6100F2E44E /* AboutMeWWDCViewController.swift */,
+				BAE06D2E1AE56AA700ED245F /* EduIntroViewController.swift */,
+				BAE06D301AE56AB700ED245F /* EduGraduationViewController.swift */,
+				BAE06D321AE56ABF00ED245F /* EduGPAViewController.swift */,
+				BAE06D341AE56ACB00ED245F /* EduCourseworkViewController.swift */,
+				BAE06D361AE56AD300ED245F /* EduFunFactViewController.swift */,
+				BAE06D241AE56A5D00ED245F /* ProjectsExaltedViewController.swift */,
+				BAE06D261AE56A6800ED245F /* ProjectsAngelhackViewController.swift */,
+				BAE06D281AE56A7200ED245F /* ProjectsWeeblogViewController.swift */,
+				BAE06D2A1AE56A7B00ED245F /* ProjectsSpotrViewController.swift */,
+				BAE06D2C1AE56A8A00ED245F /* ProjectsLeapFrogViewController.swift */,
+				BAE06D381AE56AE800ED245F /* ExpTruliaViewController.swift */,
+				BAE06D3A1AE56B0100ED245F /* ExpTGNIntroViewController.swift */,
+				BAE06D3C1AE56B0800ED245F /* ExpTGNMoreViewController.swift */,
+				BAE06D3E1AE56B1000ED245F /* ExpWeeblyViewController.swift */,
+				BAE06D401AE56B3D00ED245F /* ContactViewController.swift */,
+				BAE06D421AE56B4500ED245F /* AboutAppViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -349,20 +397,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAE06D3D1AE56B0800ED245F /* ExpTGNMoreViewController.swift in Sources */,
 				BAA992E71AE2000A00756EDF /* UIIView+EK.swift in Sources */,
+				BAE06D2D1AE56A8A00ED245F /* ProjectsLeapFrogViewController.swift in Sources */,
+				BAE06D391AE56AE800ED245F /* ExpTruliaViewController.swift in Sources */,
+				BAE06D3F1AE56B1000ED245F /* ExpWeeblyViewController.swift in Sources */,
+				BAE06D2B1AE56A7B00ED245F /* ProjectsSpotrViewController.swift in Sources */,
+				BAE06D311AE56AB700ED245F /* EduGraduationViewController.swift in Sources */,
 				BAA992E01AE1FF5700756EDF /* UIFont+EK.swift in Sources */,
+				BAE06D431AE56B4500ED245F /* AboutAppViewController.swift in Sources */,
 				BA2CB43E1AE25BAD001E72BE /* ContainerDismissButton.m in Sources */,
 				BAA992E11AE1FF5700756EDF /* PortfolioTableViewCell.swift in Sources */,
 				BAA992E51AE1FF5700756EDF /* RootContainerViewController.swift in Sources */,
 				BAA992E21AE1FF5700756EDF /* BaseChildViewController.swift in Sources */,
+				BAE06D411AE56B3D00ED245F /* ContactViewController.swift in Sources */,
 				BAA992E31AE1FF5700756EDF /* HomeTableViewController.swift in Sources */,
+				BAE06D331AE56ABF00ED245F /* EduGPAViewController.swift in Sources */,
+				BAE06D271AE56A6800ED245F /* ProjectsAngelhackViewController.swift in Sources */,
 				BA344F241AE38E6100F2E44E /* AboutMeWWDCViewController.swift in Sources */,
+				BAE06D371AE56AD300ED245F /* EduFunFactViewController.swift in Sources */,
 				BA344F221AE38E5500F2E44E /* AboutMeHobbiesViewController.swift in Sources */,
+				BAE06D351AE56ACB00ED245F /* EduCourseworkViewController.swift in Sources */,
+				BAE06D3B1AE56B0100ED245F /* ExpTGNIntroViewController.swift in Sources */,
+				BAE06D2F1AE56AA700ED245F /* EduIntroViewController.swift in Sources */,
 				BAC76CAB1ADE34C50026F4D1 /* AppDelegate.swift in Sources */,
 				BAA992E41AE1FF5700756EDF /* HomeViewController.swift in Sources */,
 				BA344F201AE38E1600F2E44E /* AboutMeDescriptionViewController.swift in Sources */,
+				BAE06D251AE56A5D00ED245F /* ProjectsExaltedViewController.swift in Sources */,
 				BAFA3A331AE380AD0004CD8C /* AboutMeIntroViewController.swift in Sources */,
 				BAA992F61AE2289100756EDF /* EKPageScrolling.swift in Sources */,
+				BAE06D291AE56A7200ED245F /* ProjectsWeeblogViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
