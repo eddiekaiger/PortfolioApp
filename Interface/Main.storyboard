@@ -215,7 +215,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXx-PK-aZ5">
-                                <rect key="frame" x="36" y="289" width="528" height="21"/>
+                                <rect key="frame" x="31" y="300" width="538" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -223,9 +223,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="OXx-PK-aZ5" secondAttribute="centerY" id="UMP-cO-8fg"/>
-                            <constraint firstItem="OXx-PK-aZ5" firstAttribute="leading" secondItem="yez-I5-Gql" secondAttribute="leadingMargin" constant="20" id="lCU-fs-2eN"/>
-                            <constraint firstItem="OXx-PK-aZ5" firstAttribute="trailing" secondItem="yez-I5-Gql" secondAttribute="trailingMargin" constant="-20" id="uvz-JD-g6Q"/>
+                            <constraint firstAttribute="centerY" secondItem="OXx-PK-aZ5" secondAttribute="centerY" constant="-10" id="UMP-cO-8fg"/>
+                            <constraint firstItem="OXx-PK-aZ5" firstAttribute="leading" secondItem="yez-I5-Gql" secondAttribute="leadingMargin" constant="15" id="lCU-fs-2eN"/>
+                            <constraint firstItem="OXx-PK-aZ5" firstAttribute="trailing" secondItem="yez-I5-Gql" secondAttribute="trailingMargin" constant="-15" id="uvz-JD-g6Q"/>
                         </constraints>
                     </view>
                     <connections>
@@ -247,8 +247,45 @@
                     <view key="view" contentMode="scaleToFill" id="r9y-4T-SIr">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJc-5F-f8d">
+                                <rect key="frame" x="36" y="110" width="528" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4iI-5R-jGD">
+                                <rect key="frame" x="16" y="171" width="568" height="399"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4iI-5R-jGD" firstAttribute="leading" secondItem="r9y-4T-SIr" secondAttribute="leadingMargin" id="8uX-tl-uIW"/>
+                            <constraint firstItem="4iI-5R-jGD" firstAttribute="top" secondItem="yJc-5F-f8d" secondAttribute="bottom" constant="40" id="P73-cv-Ynu"/>
+                            <constraint firstAttribute="centerX" secondItem="yJc-5F-f8d" secondAttribute="centerX" id="PbE-io-CJf"/>
+                            <constraint firstAttribute="centerX" secondItem="4iI-5R-jGD" secondAttribute="centerX" id="R13-AR-a8v"/>
+                            <constraint firstItem="yJc-5F-f8d" firstAttribute="leading" secondItem="r9y-4T-SIr" secondAttribute="leadingMargin" constant="20" id="YO6-rM-BIJ"/>
+                            <constraint firstAttribute="centerY" secondItem="4iI-5R-jGD" secondAttribute="centerY" id="hMb-w0-G72"/>
+                            <constraint firstItem="yJc-5F-f8d" firstAttribute="top" secondItem="BUD-NL-kcO" secondAttribute="bottom" constant="90" id="oEs-vh-D4q"/>
+                            <constraint firstItem="yJc-5F-f8d" firstAttribute="trailing" secondItem="r9y-4T-SIr" secondAttribute="trailingMargin" constant="-20" id="rzr-uO-3GX"/>
+                            <constraint firstItem="cpr-NZ-AAZ" firstAttribute="top" secondItem="4iI-5R-jGD" secondAttribute="bottom" constant="30" id="ysA-8a-WYX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4iI-5R-jGD" secondAttribute="trailing" id="zuA-Tm-hrW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="PbE-io-CJf"/>
+                                <exclude reference="R13-AR-a8v"/>
+                                <exclude reference="hMb-w0-G72"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="4iI-5R-jGD" id="Jb5-Dz-61I"/>
+                        <outlet property="titleButtonSpace" destination="oEs-vh-D4q" id="KOw-Dc-DVp"/>
+                        <outlet property="titleLabel" destination="yJc-5F-f8d" id="poO-dB-ZDR"/>
+                        <outlet property="titleTableViewSpace" destination="P73-cv-Ynu" id="WZd-Vl-iNv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pb3-n5-sCJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

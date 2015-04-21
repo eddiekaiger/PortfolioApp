@@ -12,6 +12,8 @@ class BaseChildViewController: UIViewController, EKPageScrolling {
     
     var label = UILabel()
 
+    let dismissButtonOffset: CGFloat = 70
+    
     let defaultTextColor = UIColor.whiteColor()
     
     var imageView = UIImageView()
