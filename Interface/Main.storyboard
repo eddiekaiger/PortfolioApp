@@ -302,8 +302,32 @@
                     <view key="view" contentMode="scaleToFill" id="ns9-tg-0tf">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WWDC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roF-Ga-qUy">
+                                <rect key="frame" x="272" y="289" width="56" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJf-gV-fJ0">
+                                <rect key="frame" x="272" y="263" width="56" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="YJf-gV-fJ0" secondAttribute="centerX" id="JhA-R7-BrW"/>
+                            <constraint firstAttribute="centerX" secondItem="roF-Ga-qUy" secondAttribute="centerX" id="MZ4-am-lMF"/>
+                            <constraint firstItem="roF-Ga-qUy" firstAttribute="top" secondItem="YJf-gV-fJ0" secondAttribute="bottom" constant="5" id="RWJ-It-Nho"/>
+                            <constraint firstAttribute="centerY" secondItem="roF-Ga-qUy" secondAttribute="centerY" constant="0.5" id="lvM-Ki-e4e"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="headerLabel" destination="YJf-gV-fJ0" id="nbd-P1-cQJ"/>
+                        <outlet property="wwdcLabel" destination="roF-Ga-qUy" id="vqB-QS-2eV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ufy-mW-cGu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
