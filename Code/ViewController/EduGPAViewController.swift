@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EduGPAViewController: UIViewController {
+class EduGPAViewController: BaseChildViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

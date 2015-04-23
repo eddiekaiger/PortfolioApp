@@ -56,6 +56,13 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             let aboutHobbiesVC = pageChildViewController("AboutMeHobbiesVC")
             let aboutWWDCVC = pageChildViewController("AboutMeWWDCVC")
             return [aboutIntroVC, aboutDescriptionVC, aboutHobbiesVC, aboutWWDCVC]
+        case .Education:
+            let eduIntroVC = pageChildViewController("EduIntroVC")
+            let eduGPAVC = pageChildViewController("EduGPAVC")
+            let eduCourseworkVC = pageChildViewController("EduCourseworkVC")
+            let eduGraduationVC = pageChildViewController("EduGraduationVC")
+            let eduFunFactVC = pageChildViewController("EduFunFactVC")
+            return [eduIntroVC, eduGPAVC, eduCourseworkVC, eduGraduationVC, eduFunFactVC]
         default:
             return []
         }

@@ -13,6 +13,7 @@
 		BA344F241AE38E6100F2E44E /* AboutMeWWDCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA344F231AE38E6100F2E44E /* AboutMeWWDCViewController.swift */; };
 		BA344F271AE4EC0800F2E44E /* ScrollRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA344F251AE4EC0800F2E44E /* ScrollRight@2x.png */; };
 		BA344F281AE4EC0800F2E44E /* ScrollRight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA344F261AE4EC0800F2E44E /* ScrollRight@3x.png */; };
+		BA4B98141AE8EB0500D094F8 /* UCDLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BA4B98131AE8EB0500D094F8 /* UCDLogo.png */; };
 		BAA992E01AE1FF5700756EDF /* UIFont+EK.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA992D81AE1FF5700756EDF /* UIFont+EK.swift */; };
 		BAA992E11AE1FF5700756EDF /* PortfolioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA992DA1AE1FF5700756EDF /* PortfolioTableViewCell.swift */; };
 		BAA992E21AE1FF5700756EDF /* BaseChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA992DC1AE1FF5700756EDF /* BaseChildViewController.swift */; };
@@ -74,6 +75,7 @@
 		BA344F231AE38E6100F2E44E /* AboutMeWWDCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutMeWWDCViewController.swift; sourceTree = "<group>"; };
 		BA344F251AE4EC0800F2E44E /* ScrollRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScrollRight@2x.png"; sourceTree = "<group>"; };
 		BA344F261AE4EC0800F2E44E /* ScrollRight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScrollRight@3x.png"; sourceTree = "<group>"; };
+		BA4B98131AE8EB0500D094F8 /* UCDLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UCDLogo.png; sourceTree = "<group>"; };
 		BAA992D81AE1FF5700756EDF /* UIFont+EK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+EK.swift"; sourceTree = "<group>"; };
 		BAA992DA1AE1FF5700756EDF /* PortfolioTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioTableViewCell.swift; sourceTree = "<group>"; };
 		BAA992DC1AE1FF5700756EDF /* BaseChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseChildViewController.swift; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 		BAC76CD71ADE4C670026F4D1 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				BA4B98131AE8EB0500D094F8 /* UCDLogo.png */,
 				BA344F251AE4EC0800F2E44E /* ScrollRight@2x.png */,
 				BA344F261AE4EC0800F2E44E /* ScrollRight@3x.png */,
 				BAFA3A261AE365E30004CD8C /* bay.jpg */,
@@ -387,6 +390,7 @@
 				BAFA3A291AE367990004CD8C /* water.jpeg in Resources */,
 				BAC76CDE1ADE4C670026F4D1 /* LaunchScreen.xib in Resources */,
 				BAC76CB61ADE34C50026F4D1 /* Images.xcassets in Resources */,
+				BA4B98141AE8EB0500D094F8 /* UCDLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

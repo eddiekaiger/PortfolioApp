@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EduCourseworkViewController: UIViewController {
+class EduCourseworkViewController: BaseChildViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

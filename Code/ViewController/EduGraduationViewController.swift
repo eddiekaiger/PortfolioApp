@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EduGraduationViewController: UIViewController {
+class EduGraduationViewController: BaseChildViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

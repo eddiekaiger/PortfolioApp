@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="YZF-W2-MxU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="YZF-W2-MxU">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -202,6 +202,209 @@
             </objects>
             <point key="canvasLocation" x="181" y="440"/>
         </scene>
+        <!--Edu Intro View Controller-->
+        <scene sceneID="bYe-sy-Xk5">
+            <objects>
+                <viewController storyboardIdentifier="EduIntroVC" id="y2G-xY-X02" customClass="EduIntroViewController" customModule="Portfolio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eRU-D0-YET"/>
+                        <viewControllerLayoutGuide type="bottom" id="akb-1U-B7c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Upb-QB-PMW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am a student of" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7iG-sT-Kge">
+                                <rect key="frame" x="235" y="141" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="at" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbp-Kx-nOC">
+                                <rect key="frame" x="293" y="238" width="15" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMPUTER SCIENCE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1af-Dl-OoC">
+                                <rect key="frame" x="213" y="177" width="174" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ufb-Cw-8Pa">
+                                <rect key="frame" x="16" y="259" width="568" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="563" id="f3U-uh-88A"/>
+                                    <constraint firstAttribute="height" constant="15" id="tcV-6S-YZW"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="f3U-uh-88A"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CQ3-T9-Ry9">
+                                <rect key="frame" x="16" y="162" width="568" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="563" id="1C4-X7-PSO"/>
+                                    <constraint firstAttribute="height" constant="23" id="9f9-l3-391"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1C4-X7-PSO"/>
+                                        <exclude reference="9f9-l3-391"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hi2-0w-lQq">
+                                <rect key="frame" x="16" y="198" width="568" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="mI2-ts-QqQ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Jf-lx-9UV">
+                                <rect key="frame" x="16" y="327" width="568" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="sZg-VA-WBb"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="sZg-VA-WBb"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="with" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9a-kf-Ebc">
+                                <rect key="frame" x="284" y="367" width="32" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SENIOR STANDING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ruh-vs-Z8d">
+                                <rect key="frame" x="224" y="403" width="153" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udt-g0-G7h">
+                                <rect key="frame" x="16" y="388" width="568" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="563" id="FgA-h2-IZ7"/>
+                                    <constraint firstAttribute="height" constant="23" id="Po2-6A-zLE"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="FgA-h2-IZ7"/>
+                                        <exclude reference="Po2-6A-zLE"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UCDLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="WEu-gw-Rdp">
+                                <rect key="frame" x="66" y="274" width="468" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="EoB-u6-OaQ"/>
+                                    <constraint firstAttribute="height" constant="53" id="u8Y-nx-zsk"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="EoB-u6-OaQ"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hi2-0w-lQq" firstAttribute="top" secondItem="1af-Dl-OoC" secondAttribute="bottom" id="3d7-16-BSp"/>
+                            <constraint firstItem="udt-g0-G7h" firstAttribute="top" secondItem="v9a-kf-Ebc" secondAttribute="bottom" id="AaS-nZ-4u5"/>
+                            <constraint firstItem="CQ3-T9-Ry9" firstAttribute="top" secondItem="7iG-sT-Kge" secondAttribute="bottom" id="C1p-cx-bMI"/>
+                            <constraint firstItem="2Jf-lx-9UV" firstAttribute="height" secondItem="hi2-0w-lQq" secondAttribute="height" id="E6c-PT-PB6"/>
+                            <constraint firstAttribute="centerX" secondItem="dbp-Kx-nOC" secondAttribute="centerX" id="F3m-8n-G5g"/>
+                            <constraint firstItem="ufb-Cw-8Pa" firstAttribute="height" secondItem="udt-g0-G7h" secondAttribute="height" id="FcP-rX-ZhH"/>
+                            <constraint firstItem="ufb-Cw-8Pa" firstAttribute="trailing" secondItem="Upb-QB-PMW" secondAttribute="trailingMargin" id="IK5-bR-EhH"/>
+                            <constraint firstItem="2Jf-lx-9UV" firstAttribute="trailing" secondItem="Upb-QB-PMW" secondAttribute="trailingMargin" id="K9J-NG-eaQ"/>
+                            <constraint firstItem="2Jf-lx-9UV" firstAttribute="top" secondItem="WEu-gw-Rdp" secondAttribute="bottom" id="Kza-ce-nyW"/>
+                            <constraint firstAttribute="centerX" secondItem="1af-Dl-OoC" secondAttribute="centerX" id="Lwd-Yb-kRj"/>
+                            <constraint firstItem="udt-g0-G7h" firstAttribute="leading" secondItem="Upb-QB-PMW" secondAttribute="leadingMargin" id="MkW-4e-YAy"/>
+                            <constraint firstItem="ufb-Cw-8Pa" firstAttribute="leading" secondItem="Upb-QB-PMW" secondAttribute="leadingMargin" id="O2Q-qT-Xez"/>
+                            <constraint firstItem="v9a-kf-Ebc" firstAttribute="top" secondItem="2Jf-lx-9UV" secondAttribute="bottom" id="Trn-Hu-Gd2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CQ3-T9-Ry9" secondAttribute="trailing" id="WhX-iB-Frq"/>
+                            <constraint firstItem="WEu-gw-Rdp" firstAttribute="top" secondItem="ufb-Cw-8Pa" secondAttribute="bottom" id="ZAa-Ab-xZX"/>
+                            <constraint firstItem="hi2-0w-lQq" firstAttribute="trailing" secondItem="Upb-QB-PMW" secondAttribute="trailingMargin" id="b3P-VO-ILR"/>
+                            <constraint firstItem="udt-g0-G7h" firstAttribute="trailing" secondItem="Upb-QB-PMW" secondAttribute="trailingMargin" id="b92-dE-DCr"/>
+                            <constraint firstAttribute="centerX" secondItem="Ruh-vs-Z8d" secondAttribute="centerX" id="bHe-nq-e41"/>
+                            <constraint firstAttribute="centerX" secondItem="WEu-gw-Rdp" secondAttribute="centerX" id="h5P-SC-2aI"/>
+                            <constraint firstAttribute="centerX" secondItem="v9a-kf-Ebc" secondAttribute="centerX" id="if1-y6-gRP"/>
+                            <constraint firstItem="ufb-Cw-8Pa" firstAttribute="top" secondItem="dbp-Kx-nOC" secondAttribute="bottom" id="mNM-Hc-oqF"/>
+                            <constraint firstItem="v9a-kf-Ebc" firstAttribute="top" secondItem="WEu-gw-Rdp" secondAttribute="bottom" constant="8" id="nfM-ov-9SW"/>
+                            <constraint firstItem="dbp-Kx-nOC" firstAttribute="top" secondItem="hi2-0w-lQq" secondAttribute="bottom" id="o2D-Pt-W8H"/>
+                            <constraint firstItem="WEu-gw-Rdp" firstAttribute="leading" secondItem="Upb-QB-PMW" secondAttribute="leadingMargin" constant="50" id="oib-Ed-0Gi"/>
+                            <constraint firstItem="hi2-0w-lQq" firstAttribute="leading" secondItem="Upb-QB-PMW" secondAttribute="leadingMargin" id="p2g-lX-Pj3"/>
+                            <constraint firstItem="1af-Dl-OoC" firstAttribute="top" secondItem="CQ3-T9-Ry9" secondAttribute="bottom" id="rYT-mM-alJ"/>
+                            <constraint firstAttribute="centerY" secondItem="WEu-gw-Rdp" secondAttribute="centerY" id="scB-E0-o4E"/>
+                            <constraint firstItem="CQ3-T9-Ry9" firstAttribute="leading" secondItem="Upb-QB-PMW" secondAttribute="leadingMargin" id="wB5-Ut-hXq"/>
+                            <constraint firstItem="2Jf-lx-9UV" firstAttribute="leading" secondItem="Upb-QB-PMW" secondAttribute="leadingMargin" id="wWx-h6-SEZ"/>
+                            <constraint firstAttribute="centerX" secondItem="7iG-sT-Kge" secondAttribute="centerX" id="x3y-YW-iYL"/>
+                            <constraint firstItem="Ruh-vs-Z8d" firstAttribute="top" secondItem="udt-g0-G7h" secondAttribute="bottom" id="yRN-IE-WeA"/>
+                            <constraint firstItem="CQ3-T9-Ry9" firstAttribute="height" secondItem="ufb-Cw-8Pa" secondAttribute="height" id="zMR-yq-RMZ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="nfM-ov-9SW"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="logoImageView" destination="WEu-gw-Rdp" id="DWv-be-VL0"/>
+                        <outletCollection property="plainLabels" destination="7iG-sT-Kge" collectionClass="NSMutableArray" id="ruX-AR-Gmp"/>
+                        <outletCollection property="plainLabels" destination="dbp-Kx-nOC" collectionClass="NSMutableArray" id="Er3-wM-irU"/>
+                        <outletCollection property="plainLabels" destination="v9a-kf-Ebc" collectionClass="NSMutableArray" id="kyH-Dl-cq6"/>
+                        <outletCollection property="largeLabels" destination="1af-Dl-OoC" collectionClass="NSMutableArray" id="z1v-EW-mBG"/>
+                        <outletCollection property="largeLabels" destination="Ruh-vs-Z8d" collectionClass="NSMutableArray" id="kfy-Jh-hsx"/>
+                        <outletCollection property="boldViews" destination="1af-Dl-OoC" collectionClass="NSMutableArray" id="Fjd-bJ-baU"/>
+                        <outletCollection property="boldViews" destination="WEu-gw-Rdp" collectionClass="NSMutableArray" id="TM5-ut-emv"/>
+                        <outletCollection property="boldViews" destination="Ruh-vs-Z8d" collectionClass="NSMutableArray" id="60d-Qx-tDr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eyx-Yp-QFj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181" y="1158"/>
+        </scene>
+        <!--EduGPA View Controller-->
+        <scene sceneID="hj5-g2-5bC">
+            <objects>
+                <viewController storyboardIdentifier="EduGPAVC" id="LhX-WP-aLS" customClass="EduGPAViewController" customModule="Portfolio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5oX-MZ-hZF"/>
+                        <viewControllerLayoutGuide type="bottom" id="U8m-gr-fNb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SDS-a2-ruI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="myO-3O-G2w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="853" y="1158"/>
+        </scene>
+        <!--Edu Coursework View Controller-->
+        <scene sceneID="Eb0-4n-eHq">
+            <objects>
+                <viewController storyboardIdentifier="EduCourseworkVC" id="ppA-ur-mBF" customClass="EduCourseworkViewController" customModule="Portfolio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D5y-ax-yEh"/>
+                        <viewControllerLayoutGuide type="bottom" id="wF0-hd-qIe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="47W-QD-IDC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gY7-zv-nF4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1544" y="1158"/>
+        </scene>
         <!--About Me Description View Controller-->
         <scene sceneID="PFG-oV-mSx">
             <objects>
@@ -333,6 +536,42 @@
             </objects>
             <point key="canvasLocation" x="2227" y="440"/>
         </scene>
+        <!--Edu Graduation View Controller-->
+        <scene sceneID="Fgv-QO-klP">
+            <objects>
+                <viewController storyboardIdentifier="EduGraduationVC" id="dCI-VO-8vu" customClass="EduGraduationViewController" customModule="Portfolio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ThJ-03-b0H"/>
+                        <viewControllerLayoutGuide type="bottom" id="U7M-b1-MPQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="62o-5W-r5U">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Avf-HH-Uw6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2227" y="1158"/>
+        </scene>
+        <!--Edu Fun Fact View Controller-->
+        <scene sceneID="GEw-Dk-gKm">
+            <objects>
+                <viewController storyboardIdentifier="EduFunFactVC" id="MNf-qJ-amk" customClass="EduFunFactViewController" customModule="Portfolio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sy8-HI-7Ou"/>
+                        <viewControllerLayoutGuide type="bottom" id="l2A-uV-bgr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wg7-zU-09E">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5tC-Xm-5Pn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2921" y="1158"/>
+        </scene>
         <!--Root Container View Controller-->
         <scene sceneID="CAH-so-u7a">
             <objects>
@@ -408,6 +647,7 @@
     <resources>
         <image name="Profile-Pic.png" width="893" height="893"/>
         <image name="ScrollRight.png" width="99" height="58"/>
+        <image name="UCDLogo.png" width="1500" height="260"/>
         <image name="city.png" width="2374" height="3166"/>
     </resources>
 </document>

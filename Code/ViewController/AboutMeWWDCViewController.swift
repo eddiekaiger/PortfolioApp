@@ -46,8 +46,4 @@ class AboutMeWWDCViewController: BaseChildViewController {
         self.wwdcLabel.transform = CGAffineTransformMakeRotation(-offset * CGFloat(M_PI_2))
     }
     
-    override func onScrollWithPageOnLeft(offset: CGFloat) {
-        
-    }
-    
 }
