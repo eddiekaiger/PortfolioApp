@@ -59,10 +59,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         case .Education:
             let eduIntroVC = pageChildViewController("EduIntroVC")
             let eduGPAVC = pageChildViewController("EduGPAVC")
-            let eduCourseworkVC = pageChildViewController("EduCourseworkVC")
             let eduGraduationVC = pageChildViewController("EduGraduationVC")
+            let eduCourseworkVC = pageChildViewController("EduCourseworkVC")
             let eduFunFactVC = pageChildViewController("EduFunFactVC")
-            return [eduIntroVC, eduGPAVC, eduCourseworkVC, eduGraduationVC, eduFunFactVC]
+            return [eduIntroVC, eduGPAVC, eduGraduationVC, eduCourseworkVC, eduFunFactVC]
         default:
             return []
         }
@@ -94,7 +94,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell: PortfolioTableViewCell = tableView.dequeueReusableCellWithIdentifier(PortfolioTableViewCell.cellIdentifer, forIndexPath: indexPath) as! PortfolioTableViewCell
+        var cell: PortfolioTableViewCell = tableView.dequeueReusableCellWithIdentifier(PortfolioTableViewCell.kCellIdentifer, forIndexPath: indexPath) as! PortfolioTableViewCell
         
         cell.textLabel?.text = stringForPortfolioType(PortfolioType(rawValue: indexPath.row)!).uppercaseString
         cell.textLabel?.textAlignment = NSTextAlignment.Center

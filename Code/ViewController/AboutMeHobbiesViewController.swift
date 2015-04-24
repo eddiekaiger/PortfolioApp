@@ -51,7 +51,7 @@ class AboutMeHobbiesViewController: BaseChildViewController, UITableViewDataSour
         self.tableView.backgroundColor = UIColor.clearColor()
         self.tableView.tableFooterView = UIView()
         self.tableView.dataSource = self
-        self.tableView.registerNib(UINib(nibName: "AboutMeHobbiesTableViewCell", bundle: nil), forCellReuseIdentifier: "AboutMeHobbiesCell")
+        self.tableView.registerNib(UINib(nibName: "EKItemTableViewCell", bundle: nil), forCellReuseIdentifier: EKItemTableViewCell.kCellIdentifier)
         self.tableView.rowHeight = self.rowHeight
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         self.tableView.userInteractionEnabled = false
@@ -86,16 +86,8 @@ class AboutMeHobbiesViewController: BaseChildViewController, UITableViewDataSour
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell = tableView.dequeueReusableCellWithIdentifier("AboutMeHobbiesCell", forIndexPath: indexPath) as! UITableViewCell
-        
-        cell.backgroundColor = UIColor.clearColor()
-//        cell.contentView.backgroundColor = UIColor(white: 1, alpha: 0.2)
-        cell.selectionStyle = .None
-        
-        cell.textLabel!.textColor = UIColor.whiteColor()
+        var cell = tableView.dequeueReusableCellWithIdentifier(EKItemTableViewCell.kCellIdentifier, forIndexPath: indexPath) as! UITableViewCell
         cell.textLabel!.text = self.hobbies[indexPath.row]
-        cell.textLabel!.font = UIFont.font(EKFontType.Light, fontSize: 20)
-        cell.textLabel!.textAlignment = .Center
         
         return cell
     }

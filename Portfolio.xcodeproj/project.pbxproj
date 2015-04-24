@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BA2CB43E1AE25BAD001E72BE /* ContainerDismissButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2CB43D1AE25BAD001E72BE /* ContainerDismissButton.m */; };
+		BA3323241AEAECA7003C04A6 /* ContainerDismissButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3323231AEAECA7003C04A6 /* ContainerDismissButton.m */; };
+		BA3323261AEAECAF003C04A6 /* EKItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3323251AEAECAF003C04A6 /* EKItemTableViewCell.swift */; };
+		BA3323281AEAED44003C04A6 /* EKItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3323271AEAED44003C04A6 /* EKItemTableViewCell.xib */; };
+		BA33232A1AEAEF9B003C04A6 /* PortfolioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3323291AEAEF9B003C04A6 /* PortfolioTableViewCell.swift */; };
 		BA344F201AE38E1600F2E44E /* AboutMeDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA344F1F1AE38E1600F2E44E /* AboutMeDescriptionViewController.swift */; };
 		BA344F221AE38E5500F2E44E /* AboutMeHobbiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA344F211AE38E5500F2E44E /* AboutMeHobbiesViewController.swift */; };
 		BA344F241AE38E6100F2E44E /* AboutMeWWDCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA344F231AE38E6100F2E44E /* AboutMeWWDCViewController.swift */; };
@@ -15,7 +18,6 @@
 		BA344F281AE4EC0800F2E44E /* ScrollRight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA344F261AE4EC0800F2E44E /* ScrollRight@3x.png */; };
 		BA4B98141AE8EB0500D094F8 /* UCDLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BA4B98131AE8EB0500D094F8 /* UCDLogo.png */; };
 		BAA992E01AE1FF5700756EDF /* UIFont+EK.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA992D81AE1FF5700756EDF /* UIFont+EK.swift */; };
-		BAA992E11AE1FF5700756EDF /* PortfolioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA992DA1AE1FF5700756EDF /* PortfolioTableViewCell.swift */; };
 		BAA992E21AE1FF5700756EDF /* BaseChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA992DC1AE1FF5700756EDF /* BaseChildViewController.swift */; };
 		BAA992E31AE1FF5700756EDF /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA992DD1AE1FF5700756EDF /* HomeTableViewController.swift */; };
 		BAA992E41AE1FF5700756EDF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA992DE1AE1FF5700756EDF /* HomeViewController.swift */; };
@@ -46,8 +48,6 @@
 		BAE06D3F1AE56B1000ED245F /* ExpWeeblyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06D3E1AE56B1000ED245F /* ExpWeeblyViewController.swift */; };
 		BAE06D411AE56B3D00ED245F /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06D401AE56B3D00ED245F /* ContactViewController.swift */; };
 		BAE06D431AE56B4500ED245F /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06D421AE56B4500ED245F /* AboutAppViewController.swift */; };
-		BAE06D461AE6381E00ED245F /* AboutMeHobbiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE06D441AE6381E00ED245F /* AboutMeHobbiesTableViewCell.swift */; };
-		BAE06D471AE6381E00ED245F /* AboutMeHobbiesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAE06D451AE6381E00ED245F /* AboutMeHobbiesTableViewCell.xib */; };
 		BAFA3A1F1AE35EA00004CD8C /* school.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAFA3A1E1AE35EA00004CD8C /* school.jpg */; };
 		BAFA3A221AE364FC0004CD8C /* coffee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAFA3A201AE364FC0004CD8C /* coffee.jpg */; };
 		BAFA3A231AE364FC0004CD8C /* dock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAFA3A211AE364FC0004CD8C /* dock.jpg */; };
@@ -67,9 +67,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BA2CB43C1AE25BAD001E72BE /* ContainerDismissButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContainerDismissButton.h; path = "../../../../gracecity-iphone/Code/Subclass/ContainerDismissButton.h"; sourceTree = "<group>"; };
-		BA2CB43D1AE25BAD001E72BE /* ContainerDismissButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContainerDismissButton.m; path = "../../../../gracecity-iphone/Code/Subclass/ContainerDismissButton.m"; sourceTree = "<group>"; };
 		BA2CB43F1AE25C49001E72BE /* Portfolio-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Portfolio-Bridging-Header.h"; sourceTree = "<group>"; };
+		BA3323221AEAECA7003C04A6 /* ContainerDismissButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerDismissButton.h; sourceTree = "<group>"; };
+		BA3323231AEAECA7003C04A6 /* ContainerDismissButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerDismissButton.m; sourceTree = "<group>"; };
+		BA3323251AEAECAF003C04A6 /* EKItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKItemTableViewCell.swift; sourceTree = "<group>"; };
+		BA3323271AEAED44003C04A6 /* EKItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EKItemTableViewCell.xib; sourceTree = "<group>"; };
+		BA3323291AEAEF9B003C04A6 /* PortfolioTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioTableViewCell.swift; sourceTree = "<group>"; };
 		BA344F1F1AE38E1600F2E44E /* AboutMeDescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutMeDescriptionViewController.swift; sourceTree = "<group>"; };
 		BA344F211AE38E5500F2E44E /* AboutMeHobbiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutMeHobbiesViewController.swift; sourceTree = "<group>"; };
 		BA344F231AE38E6100F2E44E /* AboutMeWWDCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutMeWWDCViewController.swift; sourceTree = "<group>"; };
@@ -77,7 +80,6 @@
 		BA344F261AE4EC0800F2E44E /* ScrollRight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScrollRight@3x.png"; sourceTree = "<group>"; };
 		BA4B98131AE8EB0500D094F8 /* UCDLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UCDLogo.png; sourceTree = "<group>"; };
 		BAA992D81AE1FF5700756EDF /* UIFont+EK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+EK.swift"; sourceTree = "<group>"; };
-		BAA992DA1AE1FF5700756EDF /* PortfolioTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioTableViewCell.swift; sourceTree = "<group>"; };
 		BAA992DC1AE1FF5700756EDF /* BaseChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseChildViewController.swift; sourceTree = "<group>"; };
 		BAA992DD1AE1FF5700756EDF /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		BAA992DE1AE1FF5700756EDF /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -112,8 +114,6 @@
 		BAE06D3E1AE56B1000ED245F /* ExpWeeblyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpWeeblyViewController.swift; sourceTree = "<group>"; };
 		BAE06D401AE56B3D00ED245F /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		BAE06D421AE56B4500ED245F /* AboutAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutAppViewController.swift; sourceTree = "<group>"; };
-		BAE06D441AE6381E00ED245F /* AboutMeHobbiesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutMeHobbiesTableViewCell.swift; sourceTree = "<group>"; };
-		BAE06D451AE6381E00ED245F /* AboutMeHobbiesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutMeHobbiesTableViewCell.xib; sourceTree = "<group>"; };
 		BAFA3A1E1AE35EA00004CD8C /* school.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = school.jpg; sourceTree = "<group>"; };
 		BAFA3A201AE364FC0004CD8C /* coffee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coffee.jpg; sourceTree = "<group>"; };
 		BAFA3A211AE364FC0004CD8C /* dock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dock.jpg; sourceTree = "<group>"; };
@@ -152,11 +152,10 @@
 		BAA992D91AE1FF5700756EDF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BA2CB43C1AE25BAD001E72BE /* ContainerDismissButton.h */,
-				BA2CB43D1AE25BAD001E72BE /* ContainerDismissButton.m */,
-				BAA992DA1AE1FF5700756EDF /* PortfolioTableViewCell.swift */,
-				BAE06D441AE6381E00ED245F /* AboutMeHobbiesTableViewCell.swift */,
-				BAE06D451AE6381E00ED245F /* AboutMeHobbiesTableViewCell.xib */,
+				BA3323291AEAEF9B003C04A6 /* PortfolioTableViewCell.swift */,
+				BA3323221AEAECA7003C04A6 /* ContainerDismissButton.h */,
+				BA3323231AEAECA7003C04A6 /* ContainerDismissButton.m */,
+				BA3323251AEAECAF003C04A6 /* EKItemTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -204,9 +203,9 @@
 			isa = PBXGroup;
 			children = (
 				BAC76CDA1ADE4C670026F4D1 /* Main.storyboard */,
+				BAC76CD81ADE4C670026F4D1 /* Interface */,
 				BAC76CD41ADE4C670026F4D1 /* Code */,
 				BAC76CD71ADE4C670026F4D1 /* Graphics */,
-				BAC76CD81ADE4C670026F4D1 /* Interface */,
 				BAC76CA71ADE34C50026F4D1 /* Portfolio */,
 				BAC76CC11ADE34C50026F4D1 /* PortfolioTests */,
 				BAC76CA61ADE34C50026F4D1 /* Products */,
@@ -289,6 +288,7 @@
 		BAC76CD81ADE4C670026F4D1 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				BA3323271AEAED44003C04A6 /* EKItemTableViewCell.xib */,
 				BAC76CD91ADE4C670026F4D1 /* LaunchScreen.xib */,
 				BAC76CDB1ADE4C670026F4D1 /* PortfolioTableViewCell.xib */,
 			);
@@ -378,7 +378,6 @@
 			files = (
 				BAC76CE01ADE4C670026F4D1 /* PortfolioTableViewCell.xib in Resources */,
 				BAFA3A271AE365E30004CD8C /* bay.jpg in Resources */,
-				BAE06D471AE6381E00ED245F /* AboutMeHobbiesTableViewCell.xib in Resources */,
 				BAFA3A221AE364FC0004CD8C /* coffee.jpg in Resources */,
 				BAFA3A1F1AE35EA00004CD8C /* school.jpg in Resources */,
 				BAC76CDF1ADE4C670026F4D1 /* Main.storyboard in Resources */,
@@ -391,6 +390,7 @@
 				BAC76CDE1ADE4C670026F4D1 /* LaunchScreen.xib in Resources */,
 				BAC76CB61ADE34C50026F4D1 /* Images.xcassets in Resources */,
 				BA4B98141AE8EB0500D094F8 /* UCDLogo.png in Resources */,
+				BA3323281AEAED44003C04A6 /* EKItemTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,15 +413,14 @@
 				BAE06D2D1AE56A8A00ED245F /* ProjectsLeapFrogViewController.swift in Sources */,
 				BAE06D391AE56AE800ED245F /* ExpTruliaViewController.swift in Sources */,
 				BAE06D3F1AE56B1000ED245F /* ExpWeeblyViewController.swift in Sources */,
-				BAE06D461AE6381E00ED245F /* AboutMeHobbiesTableViewCell.swift in Sources */,
 				BAE06D2B1AE56A7B00ED245F /* ProjectsSpotrViewController.swift in Sources */,
 				BAE06D311AE56AB700ED245F /* EduGraduationViewController.swift in Sources */,
 				BAA992E01AE1FF5700756EDF /* UIFont+EK.swift in Sources */,
 				BAE06D431AE56B4500ED245F /* AboutAppViewController.swift in Sources */,
-				BA2CB43E1AE25BAD001E72BE /* ContainerDismissButton.m in Sources */,
-				BAA992E11AE1FF5700756EDF /* PortfolioTableViewCell.swift in Sources */,
 				BAA992E51AE1FF5700756EDF /* RootContainerViewController.swift in Sources */,
+				BA3323261AEAECAF003C04A6 /* EKItemTableViewCell.swift in Sources */,
 				BAA992E21AE1FF5700756EDF /* BaseChildViewController.swift in Sources */,
+				BA3323241AEAECA7003C04A6 /* ContainerDismissButton.m in Sources */,
 				BAE06D411AE56B3D00ED245F /* ContactViewController.swift in Sources */,
 				BAA992E31AE1FF5700756EDF /* HomeTableViewController.swift in Sources */,
 				BAE06D331AE56ABF00ED245F /* EduGPAViewController.swift in Sources */,
@@ -436,6 +435,7 @@
 				BAA992E41AE1FF5700756EDF /* HomeViewController.swift in Sources */,
 				BA344F201AE38E1600F2E44E /* AboutMeDescriptionViewController.swift in Sources */,
 				BAE06D251AE56A5D00ED245F /* ProjectsExaltedViewController.swift in Sources */,
+				BA33232A1AEAEF9B003C04A6 /* PortfolioTableViewCell.swift in Sources */,
 				BAFA3A331AE380AD0004CD8C /* AboutMeIntroViewController.swift in Sources */,
 				BAA992F61AE2289100756EDF /* EKPageScrolling.swift in Sources */,
 				BAE06D291AE56A7200ED245F /* ProjectsWeeblogViewController.swift in Sources */,

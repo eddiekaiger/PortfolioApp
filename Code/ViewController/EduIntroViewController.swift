@@ -45,10 +45,14 @@ class EduIntroViewController: BaseChildViewController {
     // MARK: - EKScrollingDelegate
     
     override func onScrollWithPageOnLeft(offset: CGFloat) {
+        
         for view in self.boldViews {
             view.transform = CGAffineTransformMakeTranslation(self.view.width * offset, 0)
             view.alpha = 1 - offset
         }
+        
+        self.logoImageView.transform = CGAffineTransformScale(CGAffineTransformMakeTranslation(offset * self.view.width, 0), 1-offset, 1-offset)
+        self.logoImageView.alpha = 1 - (offset*2);
     }
     
     override func onScrollWithPageOnRight(offset: CGFloat) {

@@ -12,11 +12,10 @@ import UIKit
 
 class PortfolioTableViewCell: UITableViewCell {
 
-    static let cellIdentifer = "PortfolioCellIdentifier"
+    static let kCellIdentifer = "PortfolioCellIdentifier"
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
@@ -24,5 +23,4 @@ class PortfolioTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
 }
