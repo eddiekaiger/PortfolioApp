@@ -8,13 +8,26 @@
 
 import UIKit
 
-class ExpTGNIntroViewController: UIViewController {
+class ExpTGNIntroViewController: BaseChildViewController {
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
     }
-
-
+    
+    // MARK: - Configure
+    
+    
+    
+    // EKScrollingDelegate
+    
+    override func onScrollWithPageOnRight(offset: CGFloat) {
+        
+    }
+    
+    override func onScrollWithPageOnLeft(offset: CGFloat) {
+        
+    }
 }

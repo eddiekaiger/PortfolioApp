@@ -34,7 +34,7 @@ class EduGraduationViewController: BaseChildViewController {
         self.dateLabel.text = "December 2015"
         self.dateLabel.textColor = self.defaultTextColor
         self.dateLabel.textAlignment = .Center
-        self.dateLabel.font = UIFont.font(EKFontType.Bold, fontSize: 40)
+        self.dateLabel.font = UIFont.font(EKFontType.Bold, fontSize: 35)
     }
     
     // MARK: - EKScrollingDelegate

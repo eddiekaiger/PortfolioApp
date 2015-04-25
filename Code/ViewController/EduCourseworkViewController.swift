@@ -64,4 +64,28 @@ class EduCourseworkViewController: BaseChildViewController, UITableViewDataSourc
         return self.courses.count
     }
     
+    // MARK: - EKScrollingDelegate
+    
+    override func onScrollWithPageOnRight(offset: CGFloat) {
+        
+        self.titleLabel.transform = CGAffineTransformMakeTranslation(-offset * self.view.width, -offset/2 * self.view.height)
+        
+        // Animate each cell in an offset fashion
+        for i in 0..<self.tableView.visibleCells().count {
+            let cell = self.tableView.visibleCells()[i] as! UITableViewCell
+            cell.transform = CGAffineTransformMakeTranslation(CGFloat(i) * offset * 150, 0)
+        }
+    }
+    
+    override func onScrollWithPageOnLeft(offset: CGFloat) {
+        
+        self.titleLabel.alpha = 1 - offset
+        
+        // Animate each cell in an offset fashion
+        for i in 0..<self.tableView.visibleCells().count {
+            let cell = self.tableView.visibleCells()[i] as! UITableViewCell
+            cell.transform = CGAffineTransformMakeTranslation(CGFloat(i) * offset * -150, 0)
+        }
+    }
+    
 }

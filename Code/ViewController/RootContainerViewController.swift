@@ -64,13 +64,21 @@ class RootContainerViewController: UIViewController, UIScrollViewDelegate {
             pages[i].view.frame = CGRectMake(CGFloat(i) * self.view.width, 0, self.view.width, self.view.height)
         }
         
+        let aspectRatio: CGFloat = self.backgroundImageView.height / self.backgroundImageView.width
+        
         // Calculate how big our imageview needs to be for parallax to work well
-        let imageWidth: CGFloat = imageShiftRatio * (self.scrollView.contentSize.width - self.view.width) + (imageSideOffset * 2) + self.view.width
+        var imageWidth: CGFloat = imageShiftRatio * (self.scrollView.contentSize.width - self.view.width) + (imageSideOffset * 2) + self.view.width
 
         // Adjust imageview height based on calculated width
-        let imageHeight: CGFloat = self.backgroundImage.size.height * imageWidth / self.backgroundImage.size.width
+        var imageHeight: CGFloat = imageWidth * aspectRatio
         
-        // Set imageview frame
+        // Make sure image is at least as tall as the view
+        if imageHeight <= self.view.height {
+            imageHeight = self.view.height
+            imageWidth = imageHeight / aspectRatio
+        }
+        
+        // Set imageview frame (center it vertically)
         self.backgroundImageView.frame = CGRectMake(-scrollView.contentOffset.x - imageSideOffset,
             -((imageHeight / 2.0) - (self.view.height / 2.0)) / 2.0, imageWidth, imageHeight)
     }

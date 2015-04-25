@@ -12,6 +12,8 @@ class EKItemTableViewCell: UITableViewCell {
 
     static let kCellIdentifier = "EKItemCell"
     
+    @IBOutlet weak var labelView: UIView!
+    
     override func awakeFromNib() {
 
         super.awakeFromNib()
@@ -22,6 +24,8 @@ class EKItemTableViewCell: UITableViewCell {
     // MARK: - Configure
     
     func configureCell() {
+        
+        self.labelView.backgroundColor = UIColor(white: 1, alpha: 0.2)
         
         self.backgroundColor = UIColor.clearColor()
         self.selectionStyle = .None

@@ -16,7 +16,7 @@ class AboutMeHobbiesViewController: BaseChildViewController, UITableViewDataSour
     @IBOutlet weak var titleTableViewSpace: NSLayoutConstraint!
     @IBOutlet weak var titleButtonSpace: NSLayoutConstraint!
     
-    let rowHeight: CGFloat = 70
+    var rowHeight: CGFloat = 70
     
     let hobbies = ["Playing guitar", "Drinking good cofee", "Snowboarding", "Jogging", "Biking"]
     
@@ -34,6 +34,10 @@ class AboutMeHobbiesViewController: BaseChildViewController, UITableViewDataSour
             self.titleButtonSpace.constant + (CGFloat(self.hobbies.count) * rowHeight) > self.view.height {
                 self.titleButtonSpace.constant = self.dismissButtonOffset
                 self.titleTableViewSpace.constant = 10
+        }
+        
+        if rowHeight * CGFloat(self.hobbies.count) + self.titleLabel.height + self.titleLabel.top > self.view.height {
+            self.tableView.rowHeight = 50
         }
     }
     
@@ -64,7 +68,7 @@ class AboutMeHobbiesViewController: BaseChildViewController, UITableViewDataSour
         self.titleLabel.transform = CGAffineTransformMakeTranslation(-offset * self.view.width, -offset/2 * self.view.height)
 
         // Animate each cell in an offset fashion
-        for i in 0..<self.hobbies.count {
+        for i in 0..<self.tableView.visibleCells().count {
             let cell = self.tableView.visibleCells()[i] as! UITableViewCell
             cell.transform = CGAffineTransformMakeTranslation(CGFloat(i) * offset * 150, 0)
         }
@@ -75,7 +79,7 @@ class AboutMeHobbiesViewController: BaseChildViewController, UITableViewDataSour
         self.titleLabel.alpha = 1 - offset
         
         // Animate each cell in an offset fashion
-        for i in 0..<self.hobbies.count {
+        for i in 0..<self.tableView.visibleCells().count {
             let cell = self.tableView.visibleCells()[i] as! UITableViewCell
             cell.transform = CGAffineTransformMakeTranslation(CGFloat(i) * offset * -150, 0)
         }

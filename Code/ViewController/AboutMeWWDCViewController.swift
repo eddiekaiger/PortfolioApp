@@ -42,8 +42,9 @@ class AboutMeWWDCViewController: BaseChildViewController {
     // MARK: - EKScrollingDelegate
     
     override func onScrollWithPageOnRight(offset: CGFloat) {
-        self.headerLabel.transform = CGAffineTransformMakeRotation(offset * CGFloat(M_PI_2))
-        self.wwdcLabel.transform = CGAffineTransformMakeRotation(-offset * CGFloat(M_PI_2))
+        var vertTranslate: CGFloat = 300
+        self.headerLabel.transform = CGAffineTransformMakeTranslation(0, -offset * vertTranslate)
+        self.wwdcLabel.transform = CGAffineTransformMakeTranslation(0, offset * vertTranslate)
     }
     
 }

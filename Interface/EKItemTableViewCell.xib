@@ -16,16 +16,25 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r7e-IB-wgk">
                         <rect key="frame" x="28" y="8" width="264" height="79"/>
-                        <color key="backgroundColor" white="1" alpha="0.13" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="r7e-IB-wgk" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="1bN-Sl-MTN"/>
                     <constraint firstItem="r7e-IB-wgk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="GOE-dn-IIe"/>
                     <constraint firstItem="r7e-IB-wgk" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-20" id="QEv-Bo-K6S"/>
+                    <constraint firstAttribute="centerX" secondItem="r7e-IB-wgk" secondAttribute="centerX" id="jca-1f-MF8"/>
                     <constraint firstItem="r7e-IB-wgk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="oLV-6v-jOv"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="QEv-Bo-K6S"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="labelView" destination="r7e-IB-wgk" id="GOs-6t-wNM"/>
+            </connections>
             <point key="canvasLocation" x="369" y="350"/>
         </tableViewCell>
     </objects>

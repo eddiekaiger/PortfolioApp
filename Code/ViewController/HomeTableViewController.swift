@@ -63,6 +63,23 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             let eduCourseworkVC = pageChildViewController("EduCourseworkVC")
             let eduFunFactVC = pageChildViewController("EduFunFactVC")
             return [eduIntroVC, eduGPAVC, eduGraduationVC, eduCourseworkVC, eduFunFactVC]
+        case .Projects:
+            let exaltedVC = pageChildViewController("ProjectsExaltedVC")
+            let angelhackVC = pageChildViewController("ProjectsAngelhackVC")
+            let spotrVC = pageChildViewController("ProjectsSpotrVC")
+            let weeblogVC = pageChildViewController("ProjectsWeeblogVC")
+            let leapfrogVC = pageChildViewController("ProjectsLeapFrogVC")
+            return [exaltedVC, angelhackVC, spotrVC, weeblogVC, leapfrogVC]
+        case .Experience:
+            let truliaVC = pageChildViewController("ExpTruliaVC")
+            let tgnIntroVC = pageChildViewController("ExpTGNIntroVC")
+            let tgnMoreVC = pageChildViewController("ExpTGNMoreVC")
+            let weeblyVC = pageChildViewController("ExpWeeblyVC")
+            return [truliaVC, tgnIntroVC, tgnMoreVC, weeblyVC]
+        case .Contact:
+            let contactVC = pageChildViewController("ContactVC")
+            let aboutAppVC = pageChildViewController("AboutAppVC")
+            return [contactVC, aboutAppVC]
         default:
             return []
         }

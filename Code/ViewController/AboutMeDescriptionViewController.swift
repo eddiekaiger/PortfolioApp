@@ -19,12 +19,18 @@ class AboutMeDescriptionViewController: BaseChildViewController {
         configureDescriptionLabel()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+//        if (self.descriptionLabel.height >= )
+    }
+    
     // MARK: - Configure
     
     func configureDescriptionLabel() {
         self.descriptionLabel.textColor = self.defaultTextColor
         self.descriptionLabel.textAlignment = .Center
         self.descriptionLabel.font = UIFont.font(EKFontType.LightItalic, fontSize: 19)
+        self.descriptionLabel.adjustsFontSizeToFitWidth = true
         self.descriptionLabel.numberOfLines = 0
         self.descriptionLabel.text = "I am a 19-year-old student of computer science in my senior year at the University Of California, Davis. As an iOS developer both by career choice and hobby, I constantly enjoy tinkering, learning, and stretching the limits of my abilities. My passion for mobile development lies at the intersection of my love for distinguished design and quality code. For me, excellence comes from achieving what I never thought I could achieve."
     }
