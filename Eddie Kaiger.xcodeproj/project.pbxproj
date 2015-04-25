@@ -16,6 +16,9 @@
 		BA344F241AE38E6100F2E44E /* AboutMeWWDCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA344F231AE38E6100F2E44E /* AboutMeWWDCViewController.swift */; };
 		BA344F271AE4EC0800F2E44E /* ScrollRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA344F251AE4EC0800F2E44E /* ScrollRight@2x.png */; };
 		BA344F281AE4EC0800F2E44E /* ScrollRight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA344F261AE4EC0800F2E44E /* ScrollRight@3x.png */; };
+		BA4746B21AEB8916001DE01E /* Spotr@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA4746B01AEB8916001DE01E /* Spotr@2x.png */; };
+		BA4746B31AEB8916001DE01E /* Spotr@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA4746B11AEB8916001DE01E /* Spotr@3x.png */; };
+		BA4746B51AEB91AE001DE01E /* Weeblog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA4746B41AEB91AE001DE01E /* Weeblog.jpg */; };
 		BA4B98141AE8EB0500D094F8 /* UCDLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BA4B98131AE8EB0500D094F8 /* UCDLogo.png */; };
 		BAA6C8611AEB38F0009DB888 /* EKActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA6C8601AEB38F0009DB888 /* EKActionButton.swift */; };
 		BAA992E01AE1FF5700756EDF /* UIFont+EK.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA992D81AE1FF5700756EDF /* UIFont+EK.swift */; };
@@ -79,6 +82,9 @@
 		BA344F231AE38E6100F2E44E /* AboutMeWWDCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutMeWWDCViewController.swift; sourceTree = "<group>"; };
 		BA344F251AE4EC0800F2E44E /* ScrollRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScrollRight@2x.png"; sourceTree = "<group>"; };
 		BA344F261AE4EC0800F2E44E /* ScrollRight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScrollRight@3x.png"; sourceTree = "<group>"; };
+		BA4746B01AEB8916001DE01E /* Spotr@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spotr@2x.png"; sourceTree = "<group>"; };
+		BA4746B11AEB8916001DE01E /* Spotr@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spotr@3x.png"; sourceTree = "<group>"; };
+		BA4746B41AEB91AE001DE01E /* Weeblog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Weeblog.jpg; sourceTree = "<group>"; };
 		BA4B98131AE8EB0500D094F8 /* UCDLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UCDLogo.png; sourceTree = "<group>"; };
 		BAA6C8601AEB38F0009DB888 /* EKActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKActionButton.swift; sourceTree = "<group>"; };
 		BAA992D81AE1FF5700756EDF /* UIFont+EK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+EK.swift"; sourceTree = "<group>"; };
@@ -268,6 +274,9 @@
 		BAC76CD71ADE4C670026F4D1 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				BA4746B41AEB91AE001DE01E /* Weeblog.jpg */,
+				BA4746B01AEB8916001DE01E /* Spotr@2x.png */,
+				BA4746B11AEB8916001DE01E /* Spotr@3x.png */,
 				BABCDDFC1AEB44C40037D8F6 /* ExaltedScreenshot.png */,
 				BA4B98131AE8EB0500D094F8 /* UCDLogo.png */,
 				BA344F251AE4EC0800F2E44E /* ScrollRight@2x.png */,
@@ -379,17 +388,20 @@
 				BAFA3A221AE364FC0004CD8C /* coffee.jpg in Resources */,
 				BAFA3A1F1AE35EA00004CD8C /* school.jpg in Resources */,
 				BAC76CDF1ADE4C670026F4D1 /* Main.storyboard in Resources */,
+				BA4746B51AEB91AE001DE01E /* Weeblog.jpg in Resources */,
 				BAFA3A231AE364FC0004CD8C /* dock.jpg in Resources */,
 				BABCDDF91AEB3C9B0037D8F6 /* Images.xcassets in Resources */,
 				BAC76CE81ADFACCE0026F4D1 /* Profile-Pic.png in Resources */,
 				BAC76CE71ADFACCE0026F4D1 /* city.png in Resources */,
 				BA344F281AE4EC0800F2E44E /* ScrollRight@3x.png in Resources */,
+				BA4746B31AEB8916001DE01E /* Spotr@3x.png in Resources */,
 				BA344F271AE4EC0800F2E44E /* ScrollRight@2x.png in Resources */,
 				BAFA3A291AE367990004CD8C /* water.jpeg in Resources */,
 				BAC76CDE1ADE4C670026F4D1 /* LaunchScreen.xib in Resources */,
 				BABCDDFD1AEB44C40037D8F6 /* ExaltedScreenshot.png in Resources */,
 				BA4B98141AE8EB0500D094F8 /* UCDLogo.png in Resources */,
 				BA3323281AEAED44003C04A6 /* EKItemTableViewCell.xib in Resources */,
+				BA4746B21AEB8916001DE01E /* Spotr@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

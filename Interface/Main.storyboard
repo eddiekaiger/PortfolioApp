@@ -597,8 +597,40 @@
                     <view key="view" contentMode="scaleToFill" id="tCE-ss-A6o">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1OO-eY-1dT">
+                                <rect key="frame" x="36" y="508" width="528" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Spotr.png" translatesAutoresizingMaskIntoConstraints="NO" id="4xz-8Z-4Jn">
+                                <rect key="frame" x="66" y="6" width="469" height="469"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="385" id="7Dq-td-7DD"/>
+                                    <constraint firstAttribute="width" secondItem="4xz-8Z-4Jn" secondAttribute="height" multiplier="1:1" id="Ny1-ix-vSJ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7Dq-td-7DD"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="4xz-8Z-4Jn" secondAttribute="centerX" id="42g-rM-Rve"/>
+                            <constraint firstItem="1OO-eY-1dT" firstAttribute="leading" secondItem="tCE-ss-A6o" secondAttribute="leadingMargin" constant="20" id="Guk-BR-mHC"/>
+                            <constraint firstItem="4xz-8Z-4Jn" firstAttribute="leading" secondItem="tCE-ss-A6o" secondAttribute="leadingMargin" constant="50" id="MrZ-Dx-n4J"/>
+                            <constraint firstItem="1OO-eY-1dT" firstAttribute="top" secondItem="4xz-8Z-4Jn" secondAttribute="bottom" constant="33" id="RJt-HV-q3g"/>
+                            <constraint firstAttribute="centerY" secondItem="4xz-8Z-4Jn" secondAttribute="centerY" constant="60" id="czM-pk-TWL"/>
+                            <constraint firstAttribute="centerX" secondItem="1OO-eY-1dT" secondAttribute="centerX" id="gF8-6C-dBo"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="1OO-eY-1dT" id="rMO-sg-GPX"/>
+                        <outlet property="logoImageView" destination="4xz-8Z-4Jn" id="GlW-Fx-era"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d2Z-TJ-zdb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -887,8 +919,40 @@
                     <view key="view" contentMode="scaleToFill" id="Cxa-H8-aee">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Weeblog.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cxY-VH-zor">
+                                <rect key="frame" x="200" y="100" width="200" height="357"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Knf-Ct-bvZ"/>
+                                    <constraint firstAttribute="width" secondItem="cxY-VH-zor" secondAttribute="height" multiplier="665:1182" id="mrO-dt-gUw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKc-sP-KCU">
+                                <rect key="frame" x="21" y="472" width="558" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="cxY-VH-zor" secondAttribute="centerY" constant="20" id="0cN-Jn-ZEJ"/>
+                            <constraint firstAttribute="centerX" secondItem="cxY-VH-zor" secondAttribute="centerX" id="1hD-CP-nGs"/>
+                            <constraint firstItem="EKc-sP-KCU" firstAttribute="leading" secondItem="Cxa-H8-aee" secondAttribute="leadingMargin" constant="5" id="1hz-Gn-3pe"/>
+                            <constraint firstItem="EKc-sP-KCU" firstAttribute="top" secondItem="cxY-VH-zor" secondAttribute="bottom" constant="15" id="BG5-0z-qcK"/>
+                            <constraint firstItem="cxY-VH-zor" firstAttribute="top" secondItem="KLP-Wf-yMk" secondAttribute="bottom" constant="80" id="mMS-qp-nDS"/>
+                            <constraint firstAttribute="centerX" secondItem="EKc-sP-KCU" secondAttribute="centerX" id="o3X-DJ-sdU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0cN-Jn-ZEJ"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="EKc-sP-KCU" id="YgG-dh-gvC"/>
+                        <outlet property="screenshotImageView" destination="cxY-VH-zor" id="1a6-VF-Mry"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j5p-Kq-Nao" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1049,7 +1113,9 @@
         <image name="ExaltedScreenshot.png" width="640" height="640"/>
         <image name="Profile-Pic.png" width="893" height="893"/>
         <image name="ScrollRight.png" width="99" height="58"/>
+        <image name="Spotr.png" width="370" height="370"/>
         <image name="UCDLogo.png" width="1500" height="260"/>
-        <image name="city.png" width="2374" height="3166"/>
+        <image name="Weeblog.jpg" width="665" height="1182"/>
+        <image name="city.png" width="1000" height="1334"/>
     </resources>
 </document>
