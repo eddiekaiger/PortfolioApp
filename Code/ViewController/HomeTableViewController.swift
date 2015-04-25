@@ -65,11 +65,11 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return [eduIntroVC, eduGPAVC, eduGraduationVC, eduCourseworkVC, eduFunFactVC]
         case .Projects:
             let exaltedVC = pageChildViewController("ProjectsExaltedVC")
-            let angelhackVC = pageChildViewController("ProjectsAngelhackVC")
+            let exaltedMoreVC = pageChildViewController("ProjectsExaltedMoreVC")
             let spotrVC = pageChildViewController("ProjectsSpotrVC")
             let weeblogVC = pageChildViewController("ProjectsWeeblogVC")
             let leapfrogVC = pageChildViewController("ProjectsLeapFrogVC")
-            return [exaltedVC, angelhackVC, spotrVC, weeblogVC, leapfrogVC]
+            return [exaltedVC, exaltedMoreVC, spotrVC, weeblogVC, leapfrogVC]
         case .Experience:
             let truliaVC = pageChildViewController("ExpTruliaVC")
             let tgnIntroVC = pageChildViewController("ExpTGNIntroVC")

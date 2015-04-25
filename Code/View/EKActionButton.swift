@@ -26,6 +26,17 @@ class EKActionButton: UIButton {
         self.layer.borderWidth = 2
         self.titleLabel!.textAlignment = .Center
         self.titleLabel!.font = UIFont.font(EKFontType.Light, fontSize: 20)
+        self.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        self.backgroundColor = UIColor(white: 1, alpha: 0.1)
     }
     
+    override var highlighted: Bool {
+        didSet {
+            if (highlighted) {
+                self.layer.borderColor = UIColor.lightGrayColor().CGColor
+            } else {
+                self.layer.borderColor = UIColor.whiteColor().CGColor
+            }
+        }
+    }
 }
