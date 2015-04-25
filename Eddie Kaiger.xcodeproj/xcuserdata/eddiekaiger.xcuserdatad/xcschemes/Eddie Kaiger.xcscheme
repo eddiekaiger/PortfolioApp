@@ -15,23 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BAC76CA41ADE34C50026F4D1"
-               BuildableName = "Portfolio.app"
-               BlueprintName = "Portfolio"
-               ReferencedContainer = "container:Portfolio.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BAC76CBD1ADE34C50026F4D1"
-               BuildableName = "PortfolioTests.xctest"
-               BlueprintName = "PortfolioTests"
-               ReferencedContainer = "container:Portfolio.xcodeproj">
+               BuildableName = "Eddie Kaiger.app"
+               BlueprintName = "Eddie Kaiger"
+               ReferencedContainer = "container:Eddie Kaiger.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -42,24 +28,14 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BAC76CBD1ADE34C50026F4D1"
-               BuildableName = "PortfolioTests.xctest"
-               BlueprintName = "PortfolioTests"
-               ReferencedContainer = "container:Portfolio.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BAC76CA41ADE34C50026F4D1"
-            BuildableName = "Portfolio.app"
-            BlueprintName = "Portfolio"
-            ReferencedContainer = "container:Portfolio.xcodeproj">
+            BuildableName = "Eddie Kaiger.app"
+            BlueprintName = "Eddie Kaiger"
+            ReferencedContainer = "container:Eddie Kaiger.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BAC76CA41ADE34C50026F4D1"
-            BuildableName = "Portfolio.app"
-            BlueprintName = "Portfolio"
-            ReferencedContainer = "container:Portfolio.xcodeproj">
+            BuildableName = "Eddie Kaiger.app"
+            BlueprintName = "Eddie Kaiger"
+            ReferencedContainer = "container:Eddie Kaiger.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BAC76CA41ADE34C50026F4D1"
-            BuildableName = "Portfolio.app"
-            BlueprintName = "Portfolio"
-            ReferencedContainer = "container:Portfolio.xcodeproj">
+            BuildableName = "Eddie Kaiger.app"
+            BlueprintName = "Eddie Kaiger"
+            ReferencedContainer = "container:Eddie Kaiger.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
