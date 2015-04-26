@@ -21,7 +21,7 @@ class AboutAppViewController: BaseChildViewController {
     
     
     
-    // EKScrollingDelegate
+    // MARK: - EKScrollingDelegate
     
     override func onScrollWithPageOnRight(offset: CGFloat) {
         

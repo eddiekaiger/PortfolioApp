@@ -43,14 +43,16 @@ class ProjectsWeeblogViewController: BaseChildViewController {
         self.descriptionLabel.font = UIFont.font(EKFontType.Light, fontSize: 16)
     }
     
-    // EKScrollingDelegate
+    // MARK: - EKScrollingDelegate
     
     override func onScrollWithPageOnRight(offset: CGFloat) {
-        
+        self.screenshotImageView.transform = CGAffineTransformMakeScale(1 - offset, 1 - offset)
+        self.descriptionLabel.alpha = 1 - offset
     }
     
     override func onScrollWithPageOnLeft(offset: CGFloat) {
-        
+        self.screenshotImageView.transform = CGAffineTransformMakeTranslation(offset * self.view.width, -offset * self.view.height)
+        self.descriptionLabel.transform = CGAffineTransformMakeTranslation(offset * self.view.width, offset * self.view.height)
     }
 
 

@@ -20,6 +20,12 @@
 		BA4746B31AEB8916001DE01E /* Spotr@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA4746B11AEB8916001DE01E /* Spotr@3x.png */; };
 		BA4746B51AEB91AE001DE01E /* Weeblog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA4746B41AEB91AE001DE01E /* Weeblog.jpg */; };
 		BA4B98141AE8EB0500D094F8 /* UCDLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BA4B98131AE8EB0500D094F8 /* UCDLogo.png */; };
+		BA7F62CF1AEC34DC0049BEFA /* LeapFrog@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA7F62CD1AEC34DC0049BEFA /* LeapFrog@2x.png */; };
+		BA7F62D01AEC34DC0049BEFA /* LeapFrog@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA7F62CE1AEC34DC0049BEFA /* LeapFrog@3x.png */; };
+		BA7F62D21AEC367F0049BEFA /* ExpSkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7F62D11AEC367F0049BEFA /* ExpSkillsViewController.swift */; };
+		BA7F62D61AEC41C50049BEFA /* Trulia.png in Resources */ = {isa = PBXBuildFile; fileRef = BA7F62D51AEC41C50049BEFA /* Trulia.png */; };
+		BA7F62D81AEC4D660049BEFA /* GraceCity.png in Resources */ = {isa = PBXBuildFile; fileRef = BA7F62D71AEC4D660049BEFA /* GraceCity.png */; };
+		BA7F62DE1AEC56B70049BEFA /* Weebly.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA7F62DD1AEC56B70049BEFA /* Weebly.jpg */; };
 		BAA6C8611AEB38F0009DB888 /* EKActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA6C8601AEB38F0009DB888 /* EKActionButton.swift */; };
 		BAA992E01AE1FF5700756EDF /* UIFont+EK.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA992D81AE1FF5700756EDF /* UIFont+EK.swift */; };
 		BAA992E21AE1FF5700756EDF /* BaseChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA992DC1AE1FF5700756EDF /* BaseChildViewController.swift */; };
@@ -86,6 +92,12 @@
 		BA4746B11AEB8916001DE01E /* Spotr@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spotr@3x.png"; sourceTree = "<group>"; };
 		BA4746B41AEB91AE001DE01E /* Weeblog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Weeblog.jpg; sourceTree = "<group>"; };
 		BA4B98131AE8EB0500D094F8 /* UCDLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UCDLogo.png; sourceTree = "<group>"; };
+		BA7F62CD1AEC34DC0049BEFA /* LeapFrog@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LeapFrog@2x.png"; sourceTree = "<group>"; };
+		BA7F62CE1AEC34DC0049BEFA /* LeapFrog@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LeapFrog@3x.png"; sourceTree = "<group>"; };
+		BA7F62D11AEC367F0049BEFA /* ExpSkillsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpSkillsViewController.swift; sourceTree = "<group>"; };
+		BA7F62D51AEC41C50049BEFA /* Trulia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Trulia.png; sourceTree = "<group>"; };
+		BA7F62D71AEC4D660049BEFA /* GraceCity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GraceCity.png; sourceTree = "<group>"; };
+		BA7F62DD1AEC56B70049BEFA /* Weebly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Weebly.jpg; sourceTree = "<group>"; };
 		BAA6C8601AEB38F0009DB888 /* EKActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKActionButton.swift; sourceTree = "<group>"; };
 		BAA992D81AE1FF5700756EDF /* UIFont+EK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+EK.swift"; sourceTree = "<group>"; };
 		BAA992DC1AE1FF5700756EDF /* BaseChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseChildViewController.swift; sourceTree = "<group>"; };
@@ -196,6 +208,7 @@
 				BAE06D3A1AE56B0100ED245F /* ExpTGNIntroViewController.swift */,
 				BAE06D3C1AE56B0800ED245F /* ExpTGNMoreViewController.swift */,
 				BAE06D3E1AE56B1000ED245F /* ExpWeeblyViewController.swift */,
+				BA7F62D11AEC367F0049BEFA /* ExpSkillsViewController.swift */,
 				BAE06D401AE56B3D00ED245F /* ContactViewController.swift */,
 				BAE06D421AE56B4500ED245F /* AboutAppViewController.swift */,
 			);
@@ -274,6 +287,11 @@
 		BAC76CD71ADE4C670026F4D1 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				BA7F62DD1AEC56B70049BEFA /* Weebly.jpg */,
+				BA7F62D71AEC4D660049BEFA /* GraceCity.png */,
+				BA7F62D51AEC41C50049BEFA /* Trulia.png */,
+				BA7F62CD1AEC34DC0049BEFA /* LeapFrog@2x.png */,
+				BA7F62CE1AEC34DC0049BEFA /* LeapFrog@3x.png */,
 				BA4746B41AEB91AE001DE01E /* Weeblog.jpg */,
 				BA4746B01AEB8916001DE01E /* Spotr@2x.png */,
 				BA4746B11AEB8916001DE01E /* Spotr@3x.png */,
@@ -384,23 +402,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAC76CE01ADE4C670026F4D1 /* PortfolioTableViewCell.xib in Resources */,
+				BA7F62DE1AEC56B70049BEFA /* Weebly.jpg in Resources */,
 				BAFA3A271AE365E30004CD8C /* bay.jpg in Resources */,
 				BAFA3A221AE364FC0004CD8C /* coffee.jpg in Resources */,
 				BAFA3A1F1AE35EA00004CD8C /* school.jpg in Resources */,
 				BAC76CDF1ADE4C670026F4D1 /* Main.storyboard in Resources */,
 				BA4746B51AEB91AE001DE01E /* Weeblog.jpg in Resources */,
+				BA7F62D81AEC4D660049BEFA /* GraceCity.png in Resources */,
 				BAFA3A231AE364FC0004CD8C /* dock.jpg in Resources */,
 				BABCDDF91AEB3C9B0037D8F6 /* Images.xcassets in Resources */,
 				BAC76CE81ADFACCE0026F4D1 /* Profile-Pic.png in Resources */,
 				BAC76CE71ADFACCE0026F4D1 /* city.png in Resources */,
 				BA344F281AE4EC0800F2E44E /* ScrollRight@3x.png in Resources */,
 				BA4746B31AEB8916001DE01E /* Spotr@3x.png in Resources */,
+				BA7F62CF1AEC34DC0049BEFA /* LeapFrog@2x.png in Resources */,
 				BA344F271AE4EC0800F2E44E /* ScrollRight@2x.png in Resources */,
 				BAFA3A291AE367990004CD8C /* water.jpeg in Resources */,
 				BAC76CDE1ADE4C670026F4D1 /* LaunchScreen.xib in Resources */,
+				BA7F62D01AEC34DC0049BEFA /* LeapFrog@3x.png in Resources */,
 				BABCDDFD1AEB44C40037D8F6 /* ExaltedScreenshot.png in Resources */,
 				BA4B98141AE8EB0500D094F8 /* UCDLogo.png in Resources */,
 				BA3323281AEAED44003C04A6 /* EKItemTableViewCell.xib in Resources */,
+				BA7F62D61AEC41C50049BEFA /* Trulia.png in Resources */,
 				BA4746B21AEB8916001DE01E /* Spotr@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +469,7 @@
 				BAA992E41AE1FF5700756EDF /* HomeViewController.swift in Sources */,
 				BAA6C8611AEB38F0009DB888 /* EKActionButton.swift in Sources */,
 				BA344F201AE38E1600F2E44E /* AboutMeDescriptionViewController.swift in Sources */,
+				BA7F62D21AEC367F0049BEFA /* ExpSkillsViewController.swift in Sources */,
 				BAE06D251AE56A5D00ED245F /* ProjectsExaltedViewController.swift in Sources */,
 				BA33232A1AEAEF9B003C04A6 /* PortfolioTableViewCell.swift in Sources */,
 				BAFA3A331AE380AD0004CD8C /* AboutMeIntroViewController.swift in Sources */,

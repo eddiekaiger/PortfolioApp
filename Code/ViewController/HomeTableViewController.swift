@@ -75,7 +75,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             let tgnIntroVC = pageChildViewController("ExpTGNIntroVC")
             let tgnMoreVC = pageChildViewController("ExpTGNMoreVC")
             let weeblyVC = pageChildViewController("ExpWeeblyVC")
-            return [truliaVC, tgnIntroVC, tgnMoreVC, weeblyVC]
+            let skillsVC = pageChildViewController("ExpSkillsVC")
+            return [truliaVC, tgnIntroVC, tgnMoreVC, weeblyVC, skillsVC]
         case .Contact:
             let contactVC = pageChildViewController("ContactVC")
             let aboutAppVC = pageChildViewController("AboutAppVC")

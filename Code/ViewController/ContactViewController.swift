@@ -21,7 +21,7 @@ class ContactViewController: BaseChildViewController {
     
     
     
-    // EKScrollingDelegate
+    // MARK: - EKScrollingDelegate
     
     override func onScrollWithPageOnRight(offset: CGFloat) {
         

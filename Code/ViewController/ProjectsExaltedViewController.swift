@@ -44,7 +44,7 @@ class ProjectsExaltedViewController: BaseChildViewController {
     }
     
     
-    // EKScrollingDelegate
+    // MARK: - EKScrollingDelegate
     
     override func onScrollWithPageOnRight(offset: CGFloat) {
         self.screenshotImageView.transform = CGAffineTransformMakeScale(1 - offset, 1 - offset)

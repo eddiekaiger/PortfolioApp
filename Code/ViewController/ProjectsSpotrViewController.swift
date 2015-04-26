@@ -43,7 +43,7 @@ class ProjectsSpotrViewController: BaseChildViewController {
         self.logoImageView.layer.masksToBounds = true
     }
     
-    // EKScrollingDelegate
+    // MARK: - EKScrollingDelegate
     
     override func onScrollWithPageOnRight(offset: CGFloat) {
         self.logoImageView.transform = CGAffineTransformMakeRotation(-offset * CGFloat(M_PI))
