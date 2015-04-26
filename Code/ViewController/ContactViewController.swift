@@ -7,27 +7,53 @@
 //
 
 import UIKit
+import MessageUI
 
-class ContactViewController: BaseChildViewController {
-
-    override func viewDidLoad() {
-        
-        super.viewDidLoad()
-        
-        
+class ContactViewController: BaseChildViewController, MFMailComposeViewControllerDelegate {
+    
+    
+    @IBOutlet var buttons: [EKActionButton]!
+    
+    // MARK: - Actions
+    
+    @IBAction func email(sender: AnyObject) {
+        if MFMailComposeViewController.canSendMail() {
+            var mailController = MFMailComposeViewController()
+            mailController.mailComposeDelegate = self
+            mailController.setToRecipients(["eddiekaiger@gmail.com"])
+            self.presentViewController(mailController, animated: true, completion: nil)
+        }
     }
     
-    // MARK: - Configure
+    @IBAction func goToGithub(sender: AnyObject) {
+        self.goToLink("https://github.com/eddiekaiger")
+    }
     
+    @IBAction func goToWebsite(sender: AnyObject) {
+        self.goToLink("http://www.eddiekaiger.com")
+    }
+    
+    @IBAction func goToFacebook(sender: AnyObject) {
+        self.goToLink("https://www.facebook.com/eddie.kaiger")
+    }
+    
+    @IBAction func goToLinkedIn(sender: AnyObject) {
+        self.goToLink("https://www.linkedin.com/in/eddiekaiger")
+    }
+    
+    // MARK: - MFMailComposeViewControllerDelegate
+    
+    func mailComposeController(controller: MFMailComposeViewController!, didFinishWithResult result: MFMailComposeResult, error: NSError!) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     
     
     // MARK: - EKScrollingDelegate
     
-    override func onScrollWithPageOnRight(offset: CGFloat) {
-        
-    }
-    
     override func onScrollWithPageOnLeft(offset: CGFloat) {
-        
+        for i in 0..<self.buttons.count {
+            var button = self.buttons[i]
+            button.transform = CGAffineTransformMakeRotation(offset * CGFloat(i) * 0.4)
+        }
     }
 }

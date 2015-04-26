@@ -19,6 +19,11 @@ class BaseChildViewController: UIViewController, EKPageScrolling {
         self.view.backgroundColor = UIColor.clearColor()
     }
     
+    // MARK: - Helper Functions
+    
+    func goToLink(urlString: String) {
+        UIApplication.sharedApplication().openURL(NSURL(string: urlString)!)
+    }
     
     // MARK: - EKScrollingDelegate
     

@@ -55,10 +55,6 @@ class ProjectsExaltedMoreViewController: BaseChildViewController {
         self.goToLink("http://goo.gl/QK1lvz")
     }
     
-    func goToLink(urlString: String) {
-        UIApplication.sharedApplication().openURL(NSURL(string: urlString)!)
-    }
-    
     // MARK: - EKScrollingDelegate
     
     override func onScrollWithPageOnRight(offset: CGFloat) {

@@ -41,10 +41,6 @@ class ExpTGNMoreViewController: BaseChildViewController {
         self.goToLink("https://play.google.com/store/apps/details?id=com.thegracenetwork.gc")
     }
     
-    func goToLink(urlString: String) {
-        UIApplication.sharedApplication().openURL(NSURL(string: urlString)!)
-    }
-    
     // MARK: - EKScrollingDelegate
     
     override func onScrollWithPageOnRight(offset: CGFloat) {

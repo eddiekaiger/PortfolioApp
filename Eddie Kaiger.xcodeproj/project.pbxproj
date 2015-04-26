@@ -26,6 +26,8 @@
 		BA7F62D61AEC41C50049BEFA /* Trulia.png in Resources */ = {isa = PBXBuildFile; fileRef = BA7F62D51AEC41C50049BEFA /* Trulia.png */; };
 		BA7F62D81AEC4D660049BEFA /* GraceCity.png in Resources */ = {isa = PBXBuildFile; fileRef = BA7F62D71AEC4D660049BEFA /* GraceCity.png */; };
 		BA7F62DE1AEC56B70049BEFA /* Weebly.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA7F62DD1AEC56B70049BEFA /* Weebly.jpg */; };
+		BA7F62E11AEC74980049BEFA /* InitialsLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA7F62DF1AEC74980049BEFA /* InitialsLogo@2x.png */; };
+		BA7F62E21AEC74980049BEFA /* InitialsLogo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA7F62E01AEC74980049BEFA /* InitialsLogo@3x.png */; };
 		BAA6C8611AEB38F0009DB888 /* EKActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA6C8601AEB38F0009DB888 /* EKActionButton.swift */; };
 		BAA992E01AE1FF5700756EDF /* UIFont+EK.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA992D81AE1FF5700756EDF /* UIFont+EK.swift */; };
 		BAA992E21AE1FF5700756EDF /* BaseChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA992DC1AE1FF5700756EDF /* BaseChildViewController.swift */; };
@@ -98,6 +100,8 @@
 		BA7F62D51AEC41C50049BEFA /* Trulia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Trulia.png; sourceTree = "<group>"; };
 		BA7F62D71AEC4D660049BEFA /* GraceCity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GraceCity.png; sourceTree = "<group>"; };
 		BA7F62DD1AEC56B70049BEFA /* Weebly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Weebly.jpg; sourceTree = "<group>"; };
+		BA7F62DF1AEC74980049BEFA /* InitialsLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "InitialsLogo@2x.png"; sourceTree = "<group>"; };
+		BA7F62E01AEC74980049BEFA /* InitialsLogo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "InitialsLogo@3x.png"; sourceTree = "<group>"; };
 		BAA6C8601AEB38F0009DB888 /* EKActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKActionButton.swift; sourceTree = "<group>"; };
 		BAA992D81AE1FF5700756EDF /* UIFont+EK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+EK.swift"; sourceTree = "<group>"; };
 		BAA992DC1AE1FF5700756EDF /* BaseChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseChildViewController.swift; sourceTree = "<group>"; };
@@ -287,6 +291,8 @@
 		BAC76CD71ADE4C670026F4D1 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				BA7F62DF1AEC74980049BEFA /* InitialsLogo@2x.png */,
+				BA7F62E01AEC74980049BEFA /* InitialsLogo@3x.png */,
 				BA7F62DD1AEC56B70049BEFA /* Weebly.jpg */,
 				BA7F62D71AEC4D660049BEFA /* GraceCity.png */,
 				BA7F62D51AEC41C50049BEFA /* Trulia.png */,
@@ -407,10 +413,12 @@
 				BAFA3A221AE364FC0004CD8C /* coffee.jpg in Resources */,
 				BAFA3A1F1AE35EA00004CD8C /* school.jpg in Resources */,
 				BAC76CDF1ADE4C670026F4D1 /* Main.storyboard in Resources */,
+				BA7F62E11AEC74980049BEFA /* InitialsLogo@2x.png in Resources */,
 				BA4746B51AEB91AE001DE01E /* Weeblog.jpg in Resources */,
 				BA7F62D81AEC4D660049BEFA /* GraceCity.png in Resources */,
 				BAFA3A231AE364FC0004CD8C /* dock.jpg in Resources */,
 				BABCDDF91AEB3C9B0037D8F6 /* Images.xcassets in Resources */,
+				BA7F62E21AEC74980049BEFA /* InitialsLogo@3x.png in Resources */,
 				BAC76CE81ADFACCE0026F4D1 /* Profile-Pic.png in Resources */,
 				BAC76CE71ADFACCE0026F4D1 /* city.png in Resources */,
 				BA344F281AE4EC0800F2E44E /* ScrollRight@3x.png in Resources */,
