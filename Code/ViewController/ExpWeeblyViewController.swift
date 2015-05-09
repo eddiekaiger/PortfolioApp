@@ -23,12 +23,12 @@ class ExpWeeblyViewController: BaseChildViewController {
     
     // MARK: - Configure
     
-    func configureLogoImageView() {
+    private func configureLogoImageView() {
         self.logoImageView.layer.borderColor = UIColor.whiteColor().CGColor
         self.logoImageView.layer.borderWidth = 2
     }
     
-    func configureDescriptionLabel() {
+    private func configureDescriptionLabel() {
         self.descriptionLabel.text = "This summer, I will be interning as an iOS Developer at Weebly, Inc. I will be writing code in Swift and Objective-C for their iPhone and iPad applications."
         self.descriptionLabel.textColor = self.defaultTextColor
         self.descriptionLabel.textAlignment = .Center

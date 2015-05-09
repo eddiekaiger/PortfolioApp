@@ -33,14 +33,14 @@ class EduCourseworkViewController: BaseChildViewController, UITableViewDataSourc
     
     // MARK: - Configure
     
-    func configureTitleLabel() {
+    private func configureTitleLabel() {
         self.titleLabel.text = "Relevant Courses:"
         self.titleLabel.textColor = self.defaultTextColor
         self.titleLabel.textAlignment = .Center
         self.titleLabel.font = UIFont.font(EKFontType.Bold, fontSize: 25)
     }
     
-    func configureTableView() {
+    private func configureTableView() {
         self.tableView.backgroundColor = UIColor.clearColor()
         self.tableView.tableFooterView = UIView()
         self.tableView.dataSource = self

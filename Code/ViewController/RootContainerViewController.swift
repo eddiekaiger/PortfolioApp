@@ -14,9 +14,13 @@ class RootContainerViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak private var backgroundImageView: UIImageView!
     @IBOutlet weak private var scrollRightImageView: UIImageView!
     
-    // Default image
+    /** Background image used in parallax */
     var backgroundImage = UIImage(named: "city.png")!
+    
+    /** Amount image should extend on the sides of the scrollview */
     private let imageSideOffset: CGFloat = 50
+    
+    /** Ratio of image scrolling to scrollview scrolling */
     private let imageShiftRatio: CGFloat = 0.25
     
     // View controllers used as pages

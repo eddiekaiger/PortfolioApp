@@ -28,14 +28,14 @@ class ProjectsExaltedViewController: BaseChildViewController {
     
     // MARK: - Configure
     
-    func configureScreenshot() {
+    private func configureScreenshot() {
 
         self.screenshotImageView.layer.borderWidth = 4
         self.screenshotImageView.layer.borderColor = UIColor.whiteColor().CGColor
         self.screenshotImageView.layer.masksToBounds = true
     }
     
-    func configureDescriptionLabel() {
+    private func configureDescriptionLabel() {
         self.descriptionLabel.text = "Exalted is a mobile application that serves as an intuitive, digital modern-day hymnal for contemporary Christian community worship.";
         self.descriptionLabel.textColor = self.defaultTextColor
         self.descriptionLabel.textAlignment = .Center

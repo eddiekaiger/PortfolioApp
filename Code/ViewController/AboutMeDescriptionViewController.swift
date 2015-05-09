@@ -13,20 +13,13 @@ class AboutMeDescriptionViewController: BaseChildViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-
         configureDescriptionLabel()
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-//        if (self.descriptionLabel.height >= )
     }
     
     // MARK: - Configure
     
-    func configureDescriptionLabel() {
+    private func configureDescriptionLabel() {
         self.descriptionLabel.textColor = self.defaultTextColor
         self.descriptionLabel.textAlignment = .Center
         self.descriptionLabel.font = UIFont.font(EKFontType.LightItalic, fontSize: 19)

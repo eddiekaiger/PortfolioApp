@@ -23,7 +23,7 @@ class ProjectsLeapFrogViewController: BaseChildViewController {
     
     // MARK: - Configure
 
-    func configureDescriptionLabel() {
+    private func configureDescriptionLabel() {
         self.descriptionLabel.text = "A friend and I have been working on a large project for the past few months, codenamed Project Leapfrog, the biggest app I've ever built. It's a peer-to-peer platform targeted towards college towns, built with Objective-C & Swift with a backend built on Firebase, Node.js, and MongoDB. Project Leapfrog will be released this summer."
         self.descriptionLabel.textColor = self.defaultTextColor
         self.descriptionLabel.textAlignment = .Center

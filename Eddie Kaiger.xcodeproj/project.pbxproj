@@ -113,7 +113,7 @@
 		BABCDDF41AEB3C9B0037D8F6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BABCDDF51AEB3C9B0037D8F6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BABCDDF61AEB3C9B0037D8F6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BABCDDF71AEB3C9B0037D8F6 /* Portfolio-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Portfolio-Bridging-Header.h"; sourceTree = "<group>"; };
+		BABCDDF71AEB3C9B0037D8F6 /* EK-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EK-Bridging-Header.h"; sourceTree = "<group>"; };
 		BABCDDFC1AEB44C40037D8F6 /* ExaltedScreenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ExaltedScreenshot.png; sourceTree = "<group>"; };
 		BABCDDFE1AEB4F180037D8F6 /* ProjectsExaltedMoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsExaltedMoreViewController.swift; sourceTree = "<group>"; };
 		BAC76CA51ADE34C50026F4D1 /* Eddie Kaiger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eddie Kaiger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -233,7 +233,7 @@
 				BABCDDF41AEB3C9B0037D8F6 /* AppDelegate.swift */,
 				BABCDDF51AEB3C9B0037D8F6 /* Images.xcassets */,
 				BABCDDF61AEB3C9B0037D8F6 /* Info.plist */,
-				BABCDDF71AEB3C9B0037D8F6 /* Portfolio-Bridging-Header.h */,
+				BABCDDF71AEB3C9B0037D8F6 /* EK-Bridging-Header.h */,
 			);
 			path = "Eddie Kaiger";
 			sourceTree = "<group>";
@@ -599,7 +599,7 @@
 				PRODUCT_NAME = "Eddie Kaiger";
 				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "Eddie Kaiger/Portfolio-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Eddie Kaiger/EK-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -617,7 +617,7 @@
 				PRODUCT_NAME = "Eddie Kaiger";
 				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "Eddie Kaiger/Portfolio-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Eddie Kaiger/EK-Bridging-Header.h";
 			};
 			name = Release;
 		};

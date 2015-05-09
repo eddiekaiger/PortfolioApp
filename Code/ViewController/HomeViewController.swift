@@ -18,6 +18,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var mottoLabel: UILabel!
     
+    /** Height of personal header section above tableview */
     var defaultHeaderHeight: CGFloat { return self.view.frame.size.height * 0.4 }
     
     override func viewDidLoad() {
@@ -31,13 +32,9 @@ class HomeViewController: UIViewController {
         self.headerHeightConstraint.constant = defaultHeaderHeight
     }
     
-    override func updateViewConstraints() {
-        super.updateViewConstraints()
-    }
-    
     // MARK: Configure
     
-    func configureTableView() {
+    private func configureTableView() {
         
         self.tableView.contentInset = UIEdgeInsetsMake(defaultHeaderHeight, 0, 0, 0)
         self.tableView.tableFooterView = UIView()
@@ -49,7 +46,7 @@ class HomeViewController: UIViewController {
         self.tableView.dataSource = self
     }
     
-    func configureAppleLabel() {
+    private func configureAppleLabel() {
         
         self.appleLabel.text = "I \u{2665} Apple";
         self.appleLabel.textColor = UIColor.whiteColor()
@@ -57,7 +54,7 @@ class HomeViewController: UIViewController {
         self.appleLabel.alpha = 0
     }
     
-    func configurePersonalLabels() {
+    private func configurePersonalLabels() {
         
         // Name label
         self.nameLabel.text = "Eddie Kaiger"
@@ -79,7 +76,7 @@ class HomeViewController: UIViewController {
         // Adjust height of header view
         self.headerHeightConstraint.constant = -offsetY
         
-        // When we scroll up, adjust opacity of header view items
+        // When we scroll up, adjust opacity of header items
         if -offsetY < self.defaultHeaderHeight {
             
             // Point of full invisibility

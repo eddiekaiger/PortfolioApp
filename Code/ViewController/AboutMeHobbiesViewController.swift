@@ -43,7 +43,7 @@ class AboutMeHobbiesViewController: BaseChildViewController, UITableViewDataSour
     
     // MARK: - Configure
     
-    func configureTitleLabel() {
+    private func configureTitleLabel() {
         self.titleLabel.text = "Other than programming, some of my other hobbies and interests include:"
         self.titleLabel.textColor = UIColor.whiteColor()
         self.titleLabel.font = UIFont.font(EKFontType.Light, fontSize: 20)
@@ -51,7 +51,7 @@ class AboutMeHobbiesViewController: BaseChildViewController, UITableViewDataSour
         self.titleLabel.numberOfLines = 0
     }
     
-    func configureTableView() {
+    private func configureTableView() {
         self.tableView.backgroundColor = UIColor.clearColor()
         self.tableView.tableFooterView = UIView()
         self.tableView.dataSource = self

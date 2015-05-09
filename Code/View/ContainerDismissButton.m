@@ -30,8 +30,8 @@
     self.layer.cornerRadius = cornerRadius;
 }
 
-- (void)configureDownArrow
-{
+- (void)configureDownArrow {
+    
     /*** BEHOLD, THE CREATION OF THE AMAZING DOWN-ARROW ***/
     
     const CGFloat thickness = 3;
@@ -69,8 +69,8 @@
     [self.layer addSublayer:shape];
 }
 
-- (void)setHighlighted:(BOOL)highlighted
-{
+- (void)setHighlighted:(BOOL)highlighted {
+    
     if (highlighted) {
         self.backgroundColor = [UIColor colorWithWhite:1 alpha:0.2];
     } else {
@@ -78,8 +78,7 @@
     }
 }
 
-- (UIColor *)buttonBackgroundColor
-{
+- (UIColor *)buttonBackgroundColor {
     return [UIColor clearColor];
 }
 

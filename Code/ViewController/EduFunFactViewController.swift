@@ -24,14 +24,14 @@ class EduFunFactViewController: BaseChildViewController {
     
     // MARK: - Configure
     
-    func configureTitleLabel() {
+    private func configureTitleLabel() {
         self.titleLabel.text = "Fun Fact:"
         self.titleLabel.textColor = self.defaultTextColor
         self.titleLabel.textAlignment = .Center
         self.titleLabel.font = UIFont.font(EKFontType.Bold, fontSize: 35)
     }
     
-    func configureDescriptionLabel() {
+    private func configureDescriptionLabel() {
         self.descriptionLabel.text = "I tested out of high school and graduated two years early, eager to begin taking computer science courses in college."
         self.descriptionLabel.textColor = self.defaultTextColor
         self.descriptionLabel.textAlignment = .Center

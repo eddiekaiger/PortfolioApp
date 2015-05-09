@@ -10,7 +10,6 @@ import UIKit
 
 class EKActionButton: UIButton {
 
-    
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
@@ -21,7 +20,7 @@ class EKActionButton: UIButton {
         setup()
     }
     
-    func setup() {
+    private func setup() {
         self.layer.borderColor = UIColor.whiteColor().CGColor
         self.layer.borderWidth = 2
         self.titleLabel!.textAlignment = .Center

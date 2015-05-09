@@ -27,31 +27,31 @@ class ExpTruliaViewController: BaseChildViewController {
     
     // MARK: - Configure
     
-    func configureImageView() {
+    private func configureImageView() {
         self.logoImageView.layer.cornerRadius = self.logoImageView.height / 2.0
         self.logoImageView.layer.masksToBounds = true
     }
     
-    func configureTitleLabel() {
+    private func configureTitleLabel() {
         self.titleLabel.text = "iOS Developer Intern - Trulia"
         self.titleLabel.textColor = self.defaultTextColor
         self.titleLabel.textAlignment = .Center
         self.titleLabel.font = UIFont.font(EKFontType.Bold, fontSize: 20)
     }
     
-    func configureSubtitleLabel() {
+    private func configureSubtitleLabel() {
         self.subtitleLabel.text = "Summer 2014"
         self.subtitleLabel.textColor = self.defaultTextColor
         self.subtitleLabel.textAlignment = .Center
         self.subtitleLabel.font = UIFont.font(EKFontType.LightItalic, fontSize: 20)
     }
     
-    func configureDescriptionLabel() {
+    private func configureDescriptionLabel() {
         self.descriptionLabel.text = "Worked as a full-time summer intern, developing for Trulia's consumer iPhone and iPad applications. Worked with Objective-C, XCode, git, JIRA, PHP. Created a rentals feature and fixed bugs for the release of iOS 8."
         self.descriptionLabel.textColor = self.defaultTextColor
         self.descriptionLabel.textAlignment = .Center
         self.descriptionLabel.numberOfLines = 0
-        self.descriptionLabel.font = UIFont.font(EKFontType.Light, fontSize: 17)
+        self.descriptionLabel.font = UIFont.font(EKFontType.Normal, fontSize: 17)
     }
     
     // MARK: - EKScrollingDelegate

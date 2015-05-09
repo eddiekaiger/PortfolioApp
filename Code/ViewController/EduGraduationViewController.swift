@@ -23,14 +23,14 @@ class EduGraduationViewController: BaseChildViewController {
     
     // MARK: - Configure
     
-    func configureTitleLabel() {
+    private func configureTitleLabel() {
         self.titleLabel.text = "Expected Graduation Date:"
         self.titleLabel.textColor = self.defaultTextColor
         self.titleLabel.textAlignment = .Center
         self.titleLabel.font = UIFont.font(EKFontType.Bold, fontSize: 20)
     }
     
-    func configureDateLabel() {
+    private func configureDateLabel() {
         self.dateLabel.text = "December 2015"
         self.dateLabel.textColor = self.defaultTextColor
         self.dateLabel.textAlignment = .Center
@@ -41,12 +41,9 @@ class EduGraduationViewController: BaseChildViewController {
     
     override func onScrollWithPageOnRight(offset: CGFloat) {
         
-        
         var transform = CGAffineTransformScale(CGAffineTransformMakeTranslation(-offset * self.view.width, 0), 1-offset, 1-offset)
-        
         self.titleLabel.transform = transform
         self.dateLabel.transform = transform
-        
         self.titleLabel.alpha = 1 - offset
         self.dateLabel.alpha = 1 - offset
     }

@@ -25,7 +25,7 @@ class ExpSkillsViewController: BaseChildViewController, UITableViewDataSource {
     
     // MARK: - Configure
     
-    func configureTitleLabel() {
+    private func configureTitleLabel() {
         self.titleLabel.text = "I've had experience with the following languages and tools:"
         self.titleLabel.textAlignment = .Center
         self.titleLabel.textColor = self.defaultTextColor
@@ -33,7 +33,7 @@ class ExpSkillsViewController: BaseChildViewController, UITableViewDataSource {
         self.titleLabel.font = UIFont.font(EKFontType.Bold, fontSize: 20)
     }
     
-    func configureTableView() {
+    private func configureTableView() {
         self.tableView.dataSource = self
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         self.tableView.backgroundColor = UIColor.clearColor()

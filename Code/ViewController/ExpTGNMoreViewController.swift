@@ -23,7 +23,7 @@ class ExpTGNMoreViewController: BaseChildViewController {
     
     // MARK: - Configure
     
-    func configureDescriptionLabel() {
+    private func configureDescriptionLabel() {
         self.descriptionLabel.text = "GraceCity is now expanding to every county in California."
         self.descriptionLabel.textAlignment = .Center
         self.descriptionLabel.textColor = self.defaultTextColor
@@ -33,11 +33,11 @@ class ExpTGNMoreViewController: BaseChildViewController {
     
     // MARK: - Actions
     
-    @IBAction func downloadiOS(sender: AnyObject) {
+    @IBAction private func downloadiOS(sender: AnyObject) {
         self.goToLink("https://itunes.apple.com/us/app/gracecity/id895315841?mt=8")
     }
     
-    @IBAction func downloadAndroid(sender: AnyObject) {
+    @IBAction private func downloadAndroid(sender: AnyObject) {
         self.goToLink("https://play.google.com/store/apps/details?id=com.thegracenetwork.gc")
     }
     

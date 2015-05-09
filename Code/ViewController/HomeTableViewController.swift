@@ -108,13 +108,11 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return self.storyboard!.instantiateViewControllerWithIdentifier(identifier) as! BaseChildViewController
     }
     
-    // MARK: Delegate & Data Source
+    // MARK: - Cell Configuration
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func configureCell(cell:PortfolioTableViewCell, forRow row: Int) {
         
-        var cell: PortfolioTableViewCell = tableView.dequeueReusableCellWithIdentifier(PortfolioTableViewCell.kCellIdentifer, forIndexPath: indexPath) as! PortfolioTableViewCell
-        
-        cell.textLabel?.text = stringForPortfolioType(PortfolioType(rawValue: indexPath.row)!).uppercaseString
+        cell.textLabel?.text = stringForPortfolioType(PortfolioType(rawValue: row)!).uppercaseString
         cell.textLabel?.textAlignment = NSTextAlignment.Center
         cell.textLabel?.textColor = UIColor.whiteColor()
         cell.textLabel?.font = UIFont.font(EKFontType.Light, fontSize: 18)
@@ -125,6 +123,15 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         var selectedView = UIView()
         selectedView.backgroundColor = self.highlightedCellColor
         cell.selectedBackgroundView = selectedView
+    }
+    
+    // MARK: Delegate & Data Source
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        var cell: PortfolioTableViewCell = tableView.dequeueReusableCellWithIdentifier(PortfolioTableViewCell.kCellIdentifer, forIndexPath: indexPath) as! PortfolioTableViewCell
+        
+        configureCell(cell, forRow: indexPath.row)
         
         return cell
     }
@@ -136,14 +143,14 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         
         var type: PortfolioType = PortfolioType(rawValue: indexPath.row)!
         
-        // Present VC
+        // Create VC
         var containerVC: RootContainerViewController = self.storyboard!.instantiateViewControllerWithIdentifier("RootContainerVC") as! RootContainerViewController
         
+        // Set background image and child view controllers
         containerVC.backgroundImage = self.backgroundImage(type)
         containerVC.pages = self.pages(type)
         
         self.presentViewController(containerVC, animated: true, completion: nil)
-
     }
 
     

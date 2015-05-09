@@ -23,14 +23,14 @@ class EduGPAViewController: BaseChildViewController {
     
     // MARK: - Configure
     
-    func configureTitleLabel() {
+    private func configureTitleLabel() {
         self.titleLabel.text = "Cumulative GPA:"
         self.titleLabel.textColor = self.defaultTextColor
         self.titleLabel.textAlignment = .Center
         self.titleLabel.font = UIFont.font(EKFontType.Bold, fontSize: 25)
     }
     
-    func configureGPALabel() {
+    private func configureGPALabel() {
         self.gpaLabel.text = "3.8"
         self.gpaLabel.textColor = self.defaultTextColor
         self.gpaLabel.textAlignment = .Center

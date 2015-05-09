@@ -16,7 +16,7 @@ class ContactViewController: BaseChildViewController, MFMailComposeViewControlle
     
     // MARK: - Actions
     
-    @IBAction func email(sender: AnyObject) {
+    @IBAction private func email(sender: AnyObject) {
         if MFMailComposeViewController.canSendMail() {
             var mailController = MFMailComposeViewController()
             mailController.mailComposeDelegate = self
@@ -25,19 +25,19 @@ class ContactViewController: BaseChildViewController, MFMailComposeViewControlle
         }
     }
     
-    @IBAction func goToGithub(sender: AnyObject) {
+    @IBAction private func goToGithub(sender: AnyObject) {
         self.goToLink("https://github.com/eddiekaiger")
     }
     
-    @IBAction func goToWebsite(sender: AnyObject) {
+    @IBAction private func goToWebsite(sender: AnyObject) {
         self.goToLink("http://www.eddiekaiger.com")
     }
     
-    @IBAction func goToFacebook(sender: AnyObject) {
+    @IBAction private func goToFacebook(sender: AnyObject) {
         self.goToLink("https://www.facebook.com/eddie.kaiger")
     }
     
-    @IBAction func goToLinkedIn(sender: AnyObject) {
+    @IBAction private func goToLinkedIn(sender: AnyObject) {
         self.goToLink("https://www.linkedin.com/in/eddiekaiger")
     }
     

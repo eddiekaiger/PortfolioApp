@@ -29,13 +29,13 @@ class ProjectsWeeblogViewController: BaseChildViewController {
     
     // MARK: - Configure
     
-    func configureScreenshot() {
+    private func configureScreenshot() {
         self.screenshotImageView.layer.shadowColor = UIColor.blackColor().CGColor
         self.screenshotImageView.layer.shadowOpacity = 0.8
         self.screenshotImageView.layer.shadowOffset = CGSizeMake(2, 2)
     }
     
-    func configureDescriptionLabel() {
+    private func configureDescriptionLabel() {
         self.descriptionLabel.text = "Weeblog was an internship interview project for Weebly that I made over the course of a few weeks. The app is a fully-featured local blog built on Core Data, containing photo, video, and rich text support. (Oh, and I got the internship.)"
         self.descriptionLabel.textColor = self.defaultTextColor
         self.descriptionLabel.textAlignment = .Center

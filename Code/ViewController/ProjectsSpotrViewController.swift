@@ -29,7 +29,7 @@ class ProjectsSpotrViewController: BaseChildViewController {
     
     // MARK: - Configure
     
-    func configureDescriptionLabel() {
+    private func configureDescriptionLabel() {
         self.descriptionLabel.text = "Spotr is an app that makes use of a notification center widget so that you never again forget where you left something. Spotr is still under development."
         self.descriptionLabel.textColor = self.defaultTextColor
         self.descriptionLabel.textAlignment = .Center
@@ -37,7 +37,7 @@ class ProjectsSpotrViewController: BaseChildViewController {
         self.descriptionLabel.font = UIFont.font(EKFontType.Light, fontSize: 20)
     }
     
-    func configureLogoImageView() {
+    private func configureLogoImageView() {
         self.logoImageView.layer.borderColor = UIColor.whiteColor().CGColor
         self.logoImageView.layer.borderWidth = 4
         self.logoImageView.layer.masksToBounds = true

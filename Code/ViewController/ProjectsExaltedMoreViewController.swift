@@ -24,7 +24,7 @@ class ProjectsExaltedMoreViewController: BaseChildViewController {
     
     // MARK: - Configure
     
-    func configureTestimonialLabel() {
+    private func configureTestimonialLabel() {
         
         var attrString = NSMutableAttributedString(
             string: "\"This app is a lifechanger... I've waited long enough for an app with these capabilities.\"\n\n",
@@ -42,16 +42,16 @@ class ProjectsExaltedMoreViewController: BaseChildViewController {
     
     // MARK: - Actions
     
-    @IBAction func goToiPhoneLink(sender: AnyObject) {
+    @IBAction private func goToiPhoneLink(sender: AnyObject) {
         self.goToLink("http://goo.gl/8qU0Lv")
     }
     
     
-    @IBAction func goToiPadLink(sender: AnyObject) {
+    @IBAction private func goToiPadLink(sender: AnyObject) {
         self.goToLink("http://goo.gl/97nWnO")
     }
     
-    @IBAction func goToAndroidLink(sender: AnyObject) {
+    @IBAction private func goToAndroidLink(sender: AnyObject) {
         self.goToLink("http://goo.gl/QK1lvz")
     }
     
